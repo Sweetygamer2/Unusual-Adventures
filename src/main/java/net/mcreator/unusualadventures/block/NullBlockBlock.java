@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class NullBlockBlock extends Block {
 	public NullBlockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.LODESTONE).strength(7f, 20f).instrument(NoteBlockInstrument.BIT));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.LODESTONE).strength(30f, 20f).instrument(NoteBlockInstrument.BIT));
 	}
 
 	@Override

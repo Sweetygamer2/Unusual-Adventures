@@ -21,7 +21,7 @@ public class DimmedChargedNullBlockBlock extends Block {
 	public static final BooleanProperty PERSISTENT = BlockStateProperties.PERSISTENT;
 
 	public DimmedChargedNullBlockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.LODESTONE).strength(6f, 20f).randomTicks().instrument(NoteBlockInstrument.BIT));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.LODESTONE).strength(35f, 30f).randomTicks().instrument(NoteBlockInstrument.BIT));
 		this.registerDefaultState(this.stateDefinition.any().setValue(PERSISTENT, true));
 	}
 

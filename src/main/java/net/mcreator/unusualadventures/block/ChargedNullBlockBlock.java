@@ -21,7 +21,7 @@ public class ChargedNullBlockBlock extends Block {
 	public static final BooleanProperty PERSISTENT = BlockStateProperties.PERSISTENT;
 
 	public ChargedNullBlockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.LODESTONE).strength(6f, 20f).randomTicks().instrument(NoteBlockInstrument.BIT));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.LODESTONE).strength(40f, 35f).randomTicks().instrument(NoteBlockInstrument.BIT));
 		this.registerDefaultState(this.stateDefinition.any().setValue(PERSISTENT, true));
 	}
 

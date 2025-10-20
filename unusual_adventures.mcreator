@@ -2373,6 +2373,10 @@
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:NullBlock",
+      "~CUSTOM:DimmedChargedNullBlock",
+      "~CUSTOM:ChargedNullBlock",
+      "~CUSTOM:PoweredNullBlock",
       "~CUSTOM:NullWorkbench",
       "~CUSTOM:CorruptedLabConcrete",
       "~CUSTOM:ChiseledLabTiles",

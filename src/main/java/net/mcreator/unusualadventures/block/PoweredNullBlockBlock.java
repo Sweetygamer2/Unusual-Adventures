@@ -37,7 +37,7 @@ public class PoweredNullBlockBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public PoweredNullBlockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.LODESTONE).strength(8f, 40f).lightLevel(s -> (new Object() {
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.LODESTONE).strength(50f, 40f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
 					return 0;
