@@ -1,0 +1,59 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": "CUSTOM:TiledNullPlating"
+      },
+      {
+        "value": "CUSTOM:ChargedNullPlating"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TiledNullPlating"
+      },
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": "CUSTOM:TiledNullPlating"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChargedNullPlating"
+    },
+    "name": "charged_null_plating_recipe",
+    "namespace": "mod"
+  }
+}

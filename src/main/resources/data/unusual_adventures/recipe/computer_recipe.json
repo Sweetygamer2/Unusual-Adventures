@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "unusual_adventures:null_extension"
+    },
+    "b": {
+      "item": "unusual_adventures:living_code_block"
+    },
+    "c": {
+      "item": "unusual_adventures:charged_null_block"
+    },
+    "d": {
+      "item": "unusual_adventures:broken_computer"
+    }
+  },
+  "result": {
+    "id": "unusual_adventures:computer",
+    "count": 1
+  }
+}

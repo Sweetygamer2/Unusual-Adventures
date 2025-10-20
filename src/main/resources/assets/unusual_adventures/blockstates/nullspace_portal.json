@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "unusual_adventures:block/nullspace_portal_ew"
+    },
+    "axis=x": {
+      "model": "unusual_adventures:block/nullspace_portal_ns"
+    }
+  }
+}

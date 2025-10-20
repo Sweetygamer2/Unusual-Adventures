@@ -1,0 +1,90 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "gauntlet",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "null_plated_gauntlet",
+		"particle": "block/gauntlet"
+	},
+	"elements": [
+		{
+			"name": "gauntlet",
+			"from": [5.5, 0, 5.5],
+			"to": [10.5, 9, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5.75, -2, 7]},
+			"faces": {
+				"north": {"uv": [6, 0, 8.5, 4.5], "texture": "#1"},
+				"east": {"uv": [6, 4.5, 8.5, 9], "texture": "#1"},
+				"south": {"uv": [8.5, 0, 11, 4.5], "texture": "#1"},
+				"west": {"uv": [8.5, 4.5, 11, 9], "texture": "#1"},
+				"up": {"uv": [8.5, 11.5, 6, 9], "texture": "#1"},
+				"down": {"uv": [11, 9, 8.5, 11.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "outer_layer",
+			"from": [5.25, 0, 5.25],
+			"to": [10.75, 9.1, 10.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 5.25]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.5, 4.5], "texture": "#1"},
+				"east": {"uv": [0, 4.5, 2.5, 9], "texture": "#1"},
+				"south": {"uv": [3, 0, 5.5, 4.5], "texture": "#1"},
+				"west": {"uv": [3, 4.5, 5.5, 9], "texture": "#1"},
+				"up": {"uv": [2.5, 11.5, 0, 9], "texture": "#1"},
+				"down": {"uv": [5.5, 9, 3, 11.5], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -2, 6.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, -180, 0],
+			"translation": [0, -2, 6.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [75, 75, 35],
+			"translation": [2, -1.75, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-100, -75, 155],
+			"translation": [2, -1.75, 0]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 3, 1],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"gui": {
+			"rotation": [-180, -135, -55],
+			"translation": [-2, -2.5, 0],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"head": {
+			"rotation": [135, 0, 0],
+			"translation": [-0.25, 6, 0]
+		},
+		"fixed": {
+			"rotation": [90, -45, -90],
+			"translation": [3, -3.25, 0],
+			"scale": [1.4, 1.4, 1.4]
+		},
+		"on_shelf": {
+			"rotation": [90, -45, -90],
+			"translation": [3, -3.25, 0],
+			"scale": [1.4, 1.4, 1.4]
+		}
+	},
+	"groups": [
+		{
+			"name": "gauntlet",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

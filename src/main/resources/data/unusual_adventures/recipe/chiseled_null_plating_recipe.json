@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "unusual_adventures:null_plating"
+    }
+  },
+  "result": {
+    "id": "unusual_adventures:chiseled_null_plating",
+    "count": 2
+  }
+}

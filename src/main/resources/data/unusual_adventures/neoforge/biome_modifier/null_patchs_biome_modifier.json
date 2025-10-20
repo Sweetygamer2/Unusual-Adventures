@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "unusual_adventures:binary_fields",
+  "features": "unusual_adventures:null_patchs",
+  "step": "surface_structures"
+}

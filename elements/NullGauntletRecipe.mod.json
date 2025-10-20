@@ -1,0 +1,59 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:NullEmitter"
+      },
+      {
+        "value": "CUSTOM:PoweredNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullGauntlet"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NullPlating"
+      },
+      {
+        "value": "CUSTOM:ChargedNullPlating"
+      },
+      {
+        "value": "CUSTOM:NullPlating"
+      },
+      {
+        "value": "CUSTOM:NullExtension"
+      },
+      {
+        "value": "CUSTOM:NullEmitter"
+      },
+      {
+        "value": "CUSTOM:NullExtension"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:NullPlating"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NullGauntlet"
+    },
+    "name": "null_gauntlet_recipe",
+    "namespace": "mod"
+  }
+}

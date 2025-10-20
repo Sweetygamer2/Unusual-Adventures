@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "unusual_adventures:rusty_drawer"
+    },
+    "title": {
+      "translate": "advancements.find_overworld_lab.title"
+    },
+    "description": {
+      "translate": "advancements.find_overworld_lab.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "find_overworld_lab": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "unusual_adventures:ruined_laboratory"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "parent": "unusual_adventures:the_nullspace"
+}

@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "bannerpattern",
+  "definition": {
+    "texture": "matrix_villager_banner",
+    "shieldTexture": "matrix_villager_shield",
+    "name": "Matrix Villager",
+    "requireItem": true
+  }
+}

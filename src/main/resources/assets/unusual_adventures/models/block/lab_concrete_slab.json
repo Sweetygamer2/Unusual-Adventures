@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "unusual_adventures:block/lab_concrete",
+    "bottom": "unusual_adventures:block/lab_concrete",
+    "top": "unusual_adventures:block/lab_concrete",
+    "side": "unusual_adventures:block/lab_concrete"
+  },
+  "render_type": "solid"
+}

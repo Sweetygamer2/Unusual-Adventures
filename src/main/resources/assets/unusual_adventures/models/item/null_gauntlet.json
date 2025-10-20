@@ -1,0 +1,7 @@
+{
+  "parent": "unusual_adventures:custom/gauntlet",
+  "textures": {
+    "1": "unusual_adventures:block/null_plated_gauntlet",
+    "particle": "unusual_adventures:item/null_bits"
+  }
+}

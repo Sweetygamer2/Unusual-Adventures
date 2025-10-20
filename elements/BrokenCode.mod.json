@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PoweredNullBlock",
+    "blockstateList": [
+      {
+        "texture": "broken_code",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "broken_code",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

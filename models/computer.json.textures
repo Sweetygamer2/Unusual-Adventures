@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "computer",
+        "3": "screen_1"
+      },
+      "name": "default"
+    }
+  }
+}

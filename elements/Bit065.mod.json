@@ -1,0 +1,9 @@
+{
+  "_fv": 79,
+  "_type": "function",
+  "definition": {
+    "code": "playsound minecraft:block.note_block.bit master @a ~ ~ ~ 0.8 0.65",
+    "name": "bit_065",
+    "namespace": "mod"
+  }
+}

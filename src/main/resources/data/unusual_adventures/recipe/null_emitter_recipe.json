@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "unusual_adventures:null_plating"
+    },
+    "b": {
+      "item": "unusual_adventures:living_code_block"
+    }
+  },
+  "result": {
+    "id": "unusual_adventures:null_emitter",
+    "count": 1
+  }
+}

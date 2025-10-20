@@ -1,0 +1,2714 @@
+{
+  "mod_elements": [
+    {
+      "name": "BinaryFields",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binary_fields",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/worldgen/biome/binary_fields.json"
+        ]
+      }
+    },
+    {
+      "name": "Nullspace",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nullspace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/dimension/nullspace.json",
+          "src/main/resources/assets/unusual_adventures/models/block/nullspace_portal_ew.json",
+          "src/main/java/net/mcreator/unusualadventures/world/dimension/NullspaceDimension.java",
+          "src/main/java/net/mcreator/unusualadventures/world/teleporter/NullspacePortalShape.java",
+          "src/main/java/net/mcreator/unusualadventures/block/NullspacePortalBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/block/nullspace_portal_ns.json",
+          "src/main/resources/data/unusual_adventures/dimension_type/nullspace.json",
+          "src/main/java/net/mcreator/unusualadventures/world/teleporter/NullspaceTeleporter.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/nullspace_portal.json"
+        ]
+      }
+    },
+    {
+      "name": "Binary",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binary",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/client/particle/BinaryParticle.java",
+          "src/main/resources/assets/unusual_adventures/particles/binary.json"
+        ]
+      }
+    },
+    {
+      "name": "NullBits",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_bits",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/null_bits.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/null_bits.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/null_bits.json",
+          "src/main/resources/assets/unusual_adventures/models/item/null_bits.json",
+          "src/main/java/net/mcreator/unusualadventures/block/NullBitsBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "NullBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/null_block.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/null_block.json",
+          "src/main/resources/assets/unusual_adventures/models/block/null_block.json",
+          "src/main/java/net/mcreator/unusualadventures/block/NullBlockBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/item/null_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Computer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/computer.json",
+          "src/main/java/net/mcreator/unusualadventures/block/ComputerBlock.java",
+          "src/main/java/net/mcreator/unusualadventures/block/entity/ComputerBlockEntity.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/computer.json",
+          "src/main/resources/assets/unusual_adventures/models/item/computer.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/computer.json"
+        ]
+      }
+    },
+    {
+      "name": "BrokenComputer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "broken_computer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/broken_computer.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/broken_computer.json",
+          "src/main/java/net/mcreator/unusualadventures/block/BrokenComputerBlock.java",
+          "src/main/java/net/mcreator/unusualadventures/block/entity/BrokenComputerBlockEntity.java",
+          "src/main/resources/assets/unusual_adventures/models/item/broken_computer.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/broken_computer.json"
+        ]
+      }
+    },
+    {
+      "name": "BrokenComputerOnRandomClientDisplayTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_computer_on_random_client_display_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/BrokenComputerOnRandomClientDisplayTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "UnusualAdventures",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unusual_adventures",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ComputerEmittedRedstonePower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "computer_emitted_redstone_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ComputerEmittedRedstonePowerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ComputerOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "computer_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ComputerOnBlockRightClickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SquadPainting",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squad_painting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/painting_variant/squad_painting.json"
+        ]
+      }
+    },
+    {
+      "name": "ComputerMainScreen",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer_main_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/world/inventory/ComputerMainScreenMenu.java",
+          "src/main/java/net/mcreator/unusualadventures/client/gui/ComputerMainScreenScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "HelpCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "help_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/HelpCommandProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ExecuteCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "execute_command",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "commandText",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ExecuteCommandProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ComputerCommandMessage",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer_command_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/ComputerCommandMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Jingle",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jingle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/function/jingle.mcfunction"
+        ]
+      },
+      "path": "~/Functions"
+    },
+    {
+      "name": "Bit065",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bit_065",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/function/bit_065.mcfunction"
+        ]
+      },
+      "path": "~/Functions"
+    },
+    {
+      "name": "Bit085",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bit_085",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/function/bit_085.mcfunction"
+        ]
+      },
+      "path": "~/Functions"
+    },
+    {
+      "name": "Bit130",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bit_130",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/function/bit_130.mcfunction"
+        ]
+      },
+      "path": "~/Functions"
+    },
+    {
+      "name": "ComputerTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "computer_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ComputerTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ConsoleAnswer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "console_answer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ConsoleAnswerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ComputerStorage",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "computer_storage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/world/inventory/ComputerStorageMenu.java",
+          "src/main/java/net/mcreator/unusualadventures/client/gui/ComputerStorageScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "NullPlating",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_plating",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/null_plating.json",
+          "src/main/java/net/mcreator/unusualadventures/block/NullPlatingBlock.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/null_plating.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/null_plating.json",
+          "src/main/resources/assets/unusual_adventures/models/block/null_plating.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChiseledNullPlating",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_null_plating",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/blockstates/chiseled_null_plating.json",
+          "src/main/resources/assets/unusual_adventures/models/item/chiseled_null_plating.json",
+          "src/main/resources/assets/unusual_adventures/models/block/chiseled_null_plating.json",
+          "src/main/java/net/mcreator/unusualadventures/block/ChiseledNullPlatingBlock.java",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/chiseled_null_plating.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TiledNullPlating",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiled_null_plating",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/tiled_null_plating.json",
+          "src/main/java/net/mcreator/unusualadventures/block/TiledNullPlatingBlock.java",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/tiled_null_plating.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/tiled_null_plating.json",
+          "src/main/resources/assets/unusual_adventures/models/block/tiled_null_plating.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChargedNullPlating",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charged_null_plating",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/ChargedNullPlatingBlock.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/charged_null_plating.json",
+          "src/main/resources/assets/unusual_adventures/models/block/charged_null_plating.json",
+          "src/main/resources/assets/unusual_adventures/models/item/charged_null_plating.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/charged_null_plating.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Power",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "power",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/power.json",
+          "src/main/resources/assets/unusual_adventures/models/block/power.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/power.json",
+          "src/main/java/net/mcreator/unusualadventures/block/PowerBlock.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/power.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullEmitter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "null_emitter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/NullEmitterBlock.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/null_emitter.json",
+          "src/main/resources/assets/unusual_adventures/models/block/null_emitter.json",
+          "src/main/resources/assets/unusual_adventures/models/item/null_emitter.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/null_emitter.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullTowers",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_towers",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/unusual_adventures/worldgen/configured_feature/null_towers.json",
+          "src/main/resources/data/unusual_adventures/worldgen/placed_feature/null_towers.json",
+          "src/main/resources/data/unusual_adventures/neoforge/biome_modifier/null_towers_biome_modifier.json"
+        ]
+      },
+      "path": "~/Generation"
+    },
+    {
+      "name": "MusicDiscBrightSunlight",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "music_disc_bright_sunlight",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/music_disc_bright_sunlight.json",
+          "src/main/resources/data/unusual_adventures/jukebox_song/music_disc_bright_sunlight.json",
+          "src/main/java/net/mcreator/unusualadventures/item/MusicDiscBrightSunlightItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AnalyseModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "analyse_module",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/item/AnalyseModuleItem.java",
+          "src/main/resources/assets/unusual_adventures/models/item/analyse_module.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RedstoneModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_module",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/item/RedstoneModuleItem.java",
+          "src/main/resources/assets/unusual_adventures/models/item/redstone_module.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ExperimentalModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experimental_module",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/experimental_module.json",
+          "src/main/java/net/mcreator/unusualadventures/item/ExperimentalModuleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ClientboundMusicSyncPacket",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "clientbound_music_sync_packet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/ClientboundMusicSyncPacket.java"
+        ]
+      }
+    },
+    {
+      "name": "LabConcrete",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/LabConcreteBlock.java",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/lab_concrete.json",
+          "src/main/resources/assets/unusual_adventures/models/block/lab_concrete.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/lab_concrete.json",
+          "src/main/resources/assets/unusual_adventures/models/item/lab_concrete.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MossyLabConcrete",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mossy_lab_concrete",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/mossy_lab_concrete.json",
+          "src/main/resources/assets/unusual_adventures/models/block/mossy_lab_concrete.json",
+          "src/main/resources/assets/unusual_adventures/models/item/mossy_lab_concrete.json",
+          "src/main/java/net/mcreator/unusualadventures/block/MossyLabConcreteBlock.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/mossy_lab_concrete.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabTiles",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_tiles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/LabTilesBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/item/lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/models/block/lab_tiles.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/lab_tiles.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BrokenLabTiles",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_lab_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/broken_lab_tiles.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/broken_lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/models/block/broken_lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/broken_lab_tiles.json",
+          "src/main/java/net/mcreator/unusualadventures/block/BrokenLabTilesBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BrokenLight",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_light",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/blockstates/broken_light.json",
+          "src/main/resources/assets/unusual_adventures/models/block/broken_light.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/broken_light.json",
+          "src/main/resources/assets/unusual_adventures/models/item/broken_light.json",
+          "src/main/java/net/mcreator/unusualadventures/block/BrokenLightBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RustyDrawer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rusty_drawer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/RustyDrawerBlock.java",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/rusty_drawer.json",
+          "src/main/resources/assets/unusual_adventures/models/block/rusty_drawer.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/rusty_drawer.json",
+          "src/main/java/net/mcreator/unusualadventures/block/entity/RustyDrawerBlockEntity.java",
+          "src/main/resources/assets/unusual_adventures/models/item/rusty_drawer.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DrawerStorage",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "drawer_storage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/client/gui/DrawerStorageScreen.java",
+          "src/main/java/net/mcreator/unusualadventures/world/inventory/DrawerStorageMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "RustyDrawerOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rusty_drawer_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/RustyDrawerOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabConcreteSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/lab_concrete_slab_top.json",
+          "src/main/resources/assets/unusual_adventures/models/block/lab_concrete_slab.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/lab_concrete_slab.json",
+          "src/main/java/net/mcreator/unusualadventures/block/LabConcreteSlabBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/item/lab_concrete_slab.json",
+          "src/main/resources/assets/unusual_adventures/models/block/lab_concrete_slab_full.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/lab_concrete_slab.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabConcreteStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/LabConcreteStairsBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/block/lab_concrete_stairs.json",
+          "src/main/resources/assets/unusual_adventures/models/block/lab_concrete_stairs_inner.json",
+          "src/main/resources/assets/unusual_adventures/models/block/lab_concrete_stairs_outer.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/lab_concrete_stairs.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/lab_concrete_stairs.json",
+          "src/main/resources/assets/unusual_adventures/models/item/lab_concrete_stairs.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallLabTiles",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_lab_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/small_lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/small_lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/models/block/small_lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/models/item/small_lab_tiles.json",
+          "src/main/java/net/mcreator/unusualadventures/block/SmallLabTilesBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallLabTilesSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_lab_tiles_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/small_lab_tiles_slab.json",
+          "src/main/resources/assets/unusual_adventures/models/block/small_lab_tiles_slab_top.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/small_lab_tiles_slab.json",
+          "src/main/resources/assets/unusual_adventures/models/block/small_lab_tiles_slab_full.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/small_lab_tiles_slab.json",
+          "src/main/java/net/mcreator/unusualadventures/block/SmallLabTilesSlabBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/item/small_lab_tiles_slab.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallLabTilesStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_lab_tiles_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/SmallLabTilesStairsBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/block/small_lab_tiles_stairs_inner.json",
+          "src/main/resources/assets/unusual_adventures/models/item/small_lab_tiles_stairs.json",
+          "src/main/resources/assets/unusual_adventures/models/block/small_lab_tiles_stairs_outer.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/small_lab_tiles_stairs.json",
+          "src/main/resources/assets/unusual_adventures/models/block/small_lab_tiles_stairs.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/small_lab_tiles_stairs.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LeftoverPaper",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "leftover_paper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/LeftoverPaperBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/block/leftover_paper.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/leftover_paper.json",
+          "src/main/resources/assets/unusual_adventures/models/item/leftover_paper.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/leftover_paper.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LeftoverPaperBlockValidPlacementCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leftover_paper_block_valid_placement_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/LeftoverPaperBlockValidPlacementConditionProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChiseledLabTiles",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_lab_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/chiseled_lab_tiles.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/chiseled_lab_tiles.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/chiseled_lab_tiles.json",
+          "src/main/java/net/mcreator/unusualadventures/block/ChiseledLabTilesBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/block/chiseled_lab_tiles.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RuinedLaboratory",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruined_laboratory",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/worldgen/template_pool/ruined_laboratory.json",
+          "src/main/resources/data/unusual_adventures/worldgen/template_pool/ruined_laboratory_large.json",
+          "src/main/resources/data/unusual_adventures/worldgen/structure_set/ruined_laboratory.json",
+          "src/main/resources/data/unusual_adventures/worldgen/template_pool/ruined_laboratory_right.json",
+          "src/main/resources/data/unusual_adventures/worldgen/structure/ruined_laboratory.json",
+          "src/main/resources/data/unusual_adventures/worldgen/template_pool/ruined_laboratory_left.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MusicModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "music_module",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/item/MusicModuleItem.java",
+          "src/main/resources/assets/unusual_adventures/models/item/music_module.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "PoweredNullBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "living_code_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/living_code_block.json",
+          "src/main/resources/assets/unusual_adventures/models/block/living_code_block.json",
+          "src/main/java/net/mcreator/unusualadventures/block/PoweredNullBlockBlock.java",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/living_code_block.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/living_code_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ChargedNullBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charged_null_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/blockstates/charged_null_block.json",
+          "src/main/resources/assets/unusual_adventures/models/block/charged_null_block.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/charged_null_block.json",
+          "src/main/java/net/mcreator/unusualadventures/block/ChargedNullBlockBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/item/charged_null_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ChargedNullBlockOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charged_null_block_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ChargedNullBlockOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PoweredNullBlockOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powered_null_block_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/PoweredNullBlockOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LivingCodePatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "living_code_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/worldgen/configured_feature/living_code_patch.json",
+          "src/main/resources/data/unusual_adventures/neoforge/biome_modifier/living_code_patch_biome_modifier.json",
+          "src/main/resources/data/unusual_adventures/worldgen/placed_feature/living_code_patch.json"
+        ]
+      },
+      "path": "~/Generation"
+    },
+    {
+      "name": "ComputerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "computer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/computer_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/computer_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WallpaperModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallpaper_module",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/wallpaper_module.json",
+          "src/main/java/net/mcreator/unusualadventures/item/WallpaperModuleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DimmedChargedNullBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimmed_charged_null_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/blockstates/dimmed_charged_null_block.json",
+          "src/main/resources/assets/unusual_adventures/models/block/dimmed_charged_null_block.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/dimmed_charged_null_block.json",
+          "src/main/resources/assets/unusual_adventures/models/item/dimmed_charged_null_block.json",
+          "src/main/java/net/mcreator/unusualadventures/block/DimmedChargedNullBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "BrokenCode",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_code",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/broken_code_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "LivingCodeInteraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "living_code_interaction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/LivingCodeInteractionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TheNullspace",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_nullspace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/the_nullspace.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FindOverworldLab",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "find_overworld_lab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/find_overworld_lab.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EnterNullspaceRift",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enter_nullspace_rift",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/enter_nullspace_rift.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "NullExtension",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_extension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/null_extension.json",
+          "src/main/java/net/mcreator/unusualadventures/block/NullExtensionBlock.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/null_extension.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/null_extension.json",
+          "src/main/resources/assets/unusual_adventures/models/block/null_extension.json"
+        ]
+      }
+    },
+    {
+      "name": "NullEmitterOnRandomClientDisplayTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_emitter_on_random_client_display_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/NullEmitterOnRandomClientDisplayTickProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabConcreteRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/lab_concrete_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_concrete_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabConcreteSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_concrete_slab_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/lab_concrete_slab_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabConcreteStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/lab_concrete_stairs_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_concrete_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabConcreteSlabRecipeCutter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete_slab_recipe_cutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/lab_concrete_slab_recipe_cutter.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_concrete_slab_recipe_cutter.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabConcreteStairsRecipeCutter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_concrete_stairs_recipe_cutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/lab_concrete_stairs_recipe_cutter.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_concrete_stairs_recipe_cutter.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MossyLabConcreteRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mossy_lab_concrete_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/mossy_lab_concrete_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/mossy_lab_concrete_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MossyLabConcreteRecipeBis",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mossy_lab_concrete_recipe_bis",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/mossy_lab_concrete_recipe_bis.json",
+          "src/main/resources/data/unusual_adventures/recipe/mossy_lab_concrete_recipe_bis.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabTilesRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_tiles_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/lab_tiles_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_tiles_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChiseledLabTilesRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_lab_tiles_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/chiseled_lab_tiles_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/chiseled_lab_tiles_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BrokenLabTilesRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_lab_tiles_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/broken_lab_tiles_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/broken_lab_tiles_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChiseledLabTilesStonecutter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_lab_tiles_stonecutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/chiseled_lab_tiles_stonecutter.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/chiseled_lab_tiles_stonecutter.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabTilesStairsStonecutter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_tiles_stairs_stonecutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_tiles_stairs_stonecutter.json",
+          "src/main/resources/data/unusual_adventures/recipe/lab_tiles_stairs_stonecutter.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LabTilesSlabStonecutter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_tiles_slab_stonecutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/lab_tiles_slab_stonecutter.json",
+          "src/main/resources/data/unusual_adventures/recipe/lab_tiles_slab_stonecutter.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallTilesStonecutter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tiles_stonecutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/small_tiles_stonecutter.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/small_tiles_stonecutter.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallTilesRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tiles_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/small_tiles_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/small_tiles_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallTilesStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tiles_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/small_tiles_stairs_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/small_tiles_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallTilesSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_tiles_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/small_tiles_slab_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/small_tiles_slab_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PaperConversionRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paper_conversion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/paper_conversion_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/paper_conversion_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullPlatingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_plating_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/null_plating_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/null_plating_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChiseledNullPlatingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_null_plating_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/chiseled_null_plating_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/chiseled_null_plating_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullPlatingTilesRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_plating_tiles_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/null_plating_tiles_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/null_plating_tiles_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChargedNullPlatingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charged_null_plating_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/charged_null_plating_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/charged_null_plating_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullEmitterRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_emitter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/null_emitter_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/null_emitter_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "UseComputer",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_computer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/use_computer.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FullUpgrade",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/full_upgrade.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FullComputerAdvancement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_computer_advancement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/FullComputerAdvancementProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NullLaboratory",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_laboratory",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/worldgen/structure_set/null_laboratory.json",
+          "src/main/resources/data/unusual_adventures/worldgen/structure/null_laboratory.json",
+          "src/main/resources/data/unusual_adventures/worldgen/template_pool/null_laboratory_main.json",
+          "src/main/resources/data/unusual_adventures/worldgen/template_pool/null_laboratory.json",
+          "src/main/resources/data/unusual_adventures/worldgen/template_pool/null_laboratory_small.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullLabLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_lab_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/loot_table/chests/null_laboratory.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MatrixBanner",
+      "type": "bannerpattern",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matrix_banner",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/banner_pattern/matrix_banner.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MatrixVillagerBannerPattern",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "matrix_villager_banner_pattern",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/matrix_villager_banner_pattern.json",
+          "src/main/java/net/mcreator/unusualadventures/item/MatrixVillagerBannerPatternItem.java",
+          "src/main/resources/data/unusual_adventures/tags/banner_pattern/pattern_item/matrix_villager_banner_pattern.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "OfficeLamp",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "office_lamp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/blockstates/office_lamp.json",
+          "src/main/java/net/mcreator/unusualadventures/block/OfficeLampBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/block/office_lamp.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/office_lamp.json",
+          "src/main/resources/assets/unusual_adventures/models/item/office_lamp.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "OfficeLampOff",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "office_lamp_off",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/office_lamp_off_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "OfficeLampOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "office_lamp_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/OfficeLampOnBlockRightClickedProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "OfficeLampRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "office_lamp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/office_lamp_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/office_lamp_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "OfficeLampEmittedRedstonePower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "office_lamp_emitted_redstone_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/OfficeLampEmittedRedstonePowerProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BreakComputer",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "break_computer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/break_computer.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "CorruptedLabConcrete",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_lab_concrete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/block/corrupted_lab_concrete.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/corrupted_lab_concrete.json",
+          "src/main/resources/assets/unusual_adventures/blockstates/corrupted_lab_concrete.json",
+          "src/main/java/net/mcreator/unusualadventures/block/CorruptedLabConcreteBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/item/corrupted_lab_concrete.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CorruptedLabConcreteRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_lab_concrete_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/corrupted_lab_concrete_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/corrupted_lab_concrete_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullGauntlet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "null_gauntlet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/item/NullGauntletItem.java",
+          "src/main/resources/assets/unusual_adventures/models/item/null_gauntlet.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NullGauntletEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_gauntlet_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/NullGauntletEntitySwingsItemProcedure.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NullspaceDurabilityRegen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nullspace_durability_regen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/NullspaceDurabilityRegenProcedure.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NullGauntletRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_gauntlet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/null_gauntlet_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/null_gauntlet_recipe.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DashModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_module",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/dash_module.json",
+          "src/main/java/net/mcreator/unusualadventures/item/DashModuleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HealModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_module",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/heal_module.json",
+          "src/main/java/net/mcreator/unusualadventures/item/HealModuleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NullWorkbench",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "null_workbench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/entity/NullWorkbenchBlockEntity.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/null_workbench.json",
+          "src/main/java/net/mcreator/unusualadventures/block/NullWorkbenchBlock.java",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/null_workbench.json",
+          "src/main/resources/assets/unusual_adventures/models/item/null_workbench.json",
+          "src/main/resources/assets/unusual_adventures/models/block/null_workbench.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullWorkbenchRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_workbench_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/null_workbench_recipe.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/null_workbench_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullWorkbenchOnRandomClientDisplayTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_workbench_on_random_client_display_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/NullWorkbenchOnRandomClientDisplayTickProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "NullWorkbenchGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "null_workbench_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/network/NullWorkbenchGUIButtonMessage.java",
+          "src/main/java/net/mcreator/unusualadventures/client/gui/NullWorkbenchGUIScreen.java",
+          "src/main/java/net/mcreator/unusualadventures/world/inventory/NullWorkbenchGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "UseGauntletChip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_gauntlet_chip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/UseGauntletChipProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NullGauntletSpecialInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_gauntlet_special_information",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/NullGauntletSpecialInformationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NullWorkbenchOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_workbench_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/NullWorkbenchOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "KbModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kb_module",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/item/KbModuleItem.java",
+          "src/main/resources/assets/unusual_adventures/models/item/kb_module.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AttributesModifiers",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "attributes_modifiers",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/AttributesModifiersProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LaserModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_module",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/laser_module.json",
+          "src/main/java/net/mcreator/unusualadventures/item/LaserModuleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ReturnCanCombineChip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_can_combine_chip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ReturnCanCombineChipProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NullGauntletLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_gauntlet_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/NullGauntletLivingEntityIsHitWithItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ObtainGauntlet",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtain_gauntlet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/obtain_gauntlet.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "EncounterLivingCode",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "encounter_living_code",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/encounter_living_code.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "NullPatchs",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "null_patchs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/neoforge/biome_modifier/null_patchs_biome_modifier.json",
+          "src/main/resources/data/unusual_adventures/worldgen/placed_feature/null_patchs.json",
+          "src/main/resources/data/unusual_adventures/worldgen/configured_feature/null_patchs.json"
+        ]
+      },
+      "path": "~/Generation"
+    },
+    {
+      "name": "LabMap",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lab_map",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/loot_table/gameplay/lab_map.json"
+        ]
+      }
+    },
+    {
+      "name": "LaboratoryPlans",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "laboratory_plans",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/laboratory_plans.json",
+          "src/main/java/net/mcreator/unusualadventures/item/LaboratoryPlansItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LaboratoryPlansPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laboratory_plans_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/LaboratoryPlansPlayerFinishesUsingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LaboratoryPlansTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laboratory_plans_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BrokenLightToSeaLantern",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_light_to_sea_lantern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/broken_light_to_sea_lantern.json",
+          "src/main/resources/data/unusual_adventures/recipe/broken_light_to_sea_lantern.json"
+        ]
+      },
+      "path": "~/Blocks"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "music_disc_bright_sunlight",
+      "files": [
+        "bright_sunlight"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "music.nullspace",
+      "files": [
+        "redwolf_bat",
+        "redwolf_squid"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:NullWorkbench",
+      "~CUSTOM:CorruptedLabConcrete",
+      "~CUSTOM:ChiseledLabTiles",
+      "~CUSTOM:SmallLabTilesStairs",
+      "~CUSTOM:SmallLabTilesSlab",
+      "~CUSTOM:SmallLabTiles",
+      "~CUSTOM:LabConcreteStairs",
+      "~CUSTOM:LabConcreteSlab",
+      "~CUSTOM:BrokenLight",
+      "~CUSTOM:BrokenLabTiles",
+      "~CUSTOM:LabTiles",
+      "~CUSTOM:MossyLabConcrete",
+      "~CUSTOM:LabConcrete",
+      "~CUSTOM:NullEmitter",
+      "~CUSTOM:ChargedNullPlating",
+      "~CUSTOM:TiledNullPlating",
+      "~CUSTOM:ChiseledNullPlating",
+      "~CUSTOM:NullPlating"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:NullWorkbench",
+      "~CUSTOM:CorruptedLabConcrete",
+      "~CUSTOM:ChiseledLabTiles",
+      "~CUSTOM:SmallLabTilesStairs",
+      "~CUSTOM:SmallLabTilesSlab",
+      "~CUSTOM:SmallLabTiles",
+      "~CUSTOM:LabConcreteStairs",
+      "~CUSTOM:LabConcreteSlab",
+      "~CUSTOM:BrokenLabTiles",
+      "~CUSTOM:LabTiles",
+      "~CUSTOM:MossyLabConcrete",
+      "~CUSTOM:LabConcrete",
+      "~CUSTOM:NullEmitter",
+      "~CUSTOM:ChargedNullPlating",
+      "~CUSTOM:TiledNullPlating",
+      "~CUSTOM:ChiseledNullPlating",
+      "~CUSTOM:NullPlating"
+    ],
+    "ITEMS:mod:upgrade": [
+      "CUSTOM:AnalyseModule",
+      "CUSTOM:RedstoneModule",
+      "CUSTOM:ExperimentalModule",
+      "CUSTOM:MusicModule",
+      "CUSTOM:WallpaperModule"
+    ],
+    "BLOCKS:mod:bits_valid": [
+      "CUSTOM:NullBlock",
+      "CUSTOM:NullPlating",
+      "CUSTOM:ChiseledNullPlating",
+      "CUSTOM:TiledNullPlating",
+      "CUSTOM:ChargedNullPlating",
+      "CUSTOM:NullEmitter",
+      "CUSTOM:PoweredNullBlock",
+      "CUSTOM:ChargedNullBlock"
+    ],
+    "BLOCKS:mod:null_plating": [
+      "CUSTOM:NullPlating",
+      "CUSTOM:ChiseledNullPlating",
+      "CUSTOM:TiledNullPlating"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:MusicDiscBrightSunlight"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:SmallLabTilesSlab",
+      "~CUSTOM:LabConcreteSlab"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:SmallLabTilesStairs",
+      "~CUSTOM:LabConcreteStairs"
+    ],
+    "BLOCKS:minecraft:replaceable": [],
+    "BLOCKS:mod:nullspace_frame": [
+      "CUSTOM:NullBlock",
+      "CUSTOM:NullPlating",
+      "CUSTOM:ChiseledNullPlating",
+      "CUSTOM:TiledNullPlating",
+      "CUSTOM:ChargedNullPlating"
+    ],
+    "ITEMS:mod:laboratory_tile": [
+      "CUSTOM:LabTiles",
+      "CUSTOM:SmallLabTiles"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [],
+    "ITEMS:mod:chip": [
+      "CUSTOM:DashModule",
+      "CUSTOM:HealModule",
+      "CUSTOM:KbModule",
+      "CUSTOM:LaserModule"
+    ],
+    "STRUCTURES:mod:on_lab_explorer_maps": [
+      "CUSTOM:RuinedLaboratory"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:UnusualAdventures": [
+      "Computer",
+      "BrokenComputer",
+      "AnalyseModule",
+      "RedstoneModule",
+      "MusicModule",
+      "WallpaperModule",
+      "ExperimentalModule",
+      "RustyDrawer",
+      "OfficeLamp",
+      "NullGauntlet",
+      "DashModule",
+      "HealModule",
+      "KbModule",
+      "LaserModule",
+      "NullWorkbench",
+      "ChargedNullPlating",
+      "NullEmitter",
+      "Power",
+      "NullBits",
+      "NullExtension",
+      "NullBlock",
+      "DimmedChargedNullBlock",
+      "ChargedNullBlock",
+      "PoweredNullBlock",
+      "NullPlating",
+      "ChiseledNullPlating",
+      "TiledNullPlating",
+      "CorruptedLabConcrete",
+      "MossyLabConcrete",
+      "LabConcrete",
+      "LabConcreteStairs",
+      "LabConcreteSlab",
+      "LabTiles",
+      "BrokenLabTiles",
+      "ChiseledLabTiles",
+      "SmallLabTiles",
+      "SmallLabTilesStairs",
+      "SmallLabTilesSlab",
+      "BrokenLight",
+      "LeftoverPaper",
+      "MatrixVillagerBannerPattern",
+      "LaboratoryPlans",
+      "MusicDiscBrightSunlight"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.unusual_adventures.office_concrete": "Office Concrete",
+      "biome.unusual_adventures.binary_fields": "Binary Fields",
+      "block.unusual_adventures.null_bits": "Null Bits",
+      "block.unusual_adventures.null_block": "Null",
+      "block.unusual_adventures.computer": "Computer",
+      "block.unusual_adventures.broken_computer": "Broken Computer",
+      "item_group.unusual_adventures.unusual_adventures": "Unusual Adventures",
+      "painting.unusual_adventures.squad_painting.title": "Matrix Villager",
+      "painting.unusual_adventures.squad_painting.author": "Unusual Squad",
+      "gui.unusual_adventures.computer_main_screen.console": "...",
+      "block.unusual_adventures.null_plating": "Null Plating",
+      "block.unusual_adventures.chiseled_null_plating": "Chiseled Null Plating",
+      "block.unusual_adventures.tiled_null_plating": "Tiled Null Plating",
+      "block.unusual_adventures.charged_null_plating": "Charged Null Plating",
+      "block.unusual_adventures.power": "Power Block",
+      "block.unusual_adventures.null_emitter": "Null Emitter",
+      "gui.unusual_adventures.console.available": "§n§l\u003e AVAILABLE PROGRAMS",
+      "subtitles.music_disc_bright_sunlight": "",
+      "item.unusual_adventures.music_disc_bright_sunlight.desc": "Redwolf - Bright Sunlight",
+      "item.unusual_adventures.music_disc_bright_sunlight": "Music Disc",
+      "item.unusual_adventures.analyse_module": "Program Disk",
+      "item.unusual_adventures.analyse_module.description_0": "§8Computer Component",
+      "item.unusual_adventures.analyse_module.description_1": "§7\u003e Analyse Module",
+      "item.unusual_adventures.redstone_module.description_1": "§7\u003e Redstone Module",
+      "item.unusual_adventures.redstone_module": "Program Disk",
+      "item.unusual_adventures.redstone_module.description_0": "§8Computer Component",
+      "item.unusual_adventures.experimental_module": "Program Disk",
+      "item.unusual_adventures.experimental_module.description_0": "§8Computer Component",
+      "item.unusual_adventures.experimental_module.description_1": "§7\u003e Experimental Module",
+      "block.unusual_adventures.lab_concrete": "Laboratory Concrete",
+      "block.unusual_adventures.mossy_lab_concrete": "Mossy Laboratory Concrete",
+      "block.unusual_adventures.lab_tiles": "Laboratory Tiles",
+      "block.unusual_adventures.broken_lab_tiles": "Cracked Laboratory Tiles",
+      "block.unusual_adventures.broken_light": "Broken Light",
+      "block.unusual_adventures.rusty_drawer": "Rusty Drawer",
+      "block.unusual_adventures.lab_concrete_slab": "Laboratory Concrete",
+      "block.unusual_adventures.lab_concrete_stairs": "Laboratory Concrete",
+      "block.unusual_adventures.small_lab_tiles": "Small Laboratory Tiles",
+      "block.unusual_adventures.small_lab_tiles_slab": "Laboratory Tiles Slab",
+      "block.unusual_adventures.small_lab_tiles_stairs": "Laboratory Tiles Stairs",
+      "block.unusual_adventures.leftover_paper": "Leftover Paper",
+      "block.unusual_adventures.chiseled_lab_tiles": "Chiseled Laboratory Tiles",
+      "item.unusual_adventures.music_module.description_1": "§7\u003e Music Module",
+      "item.unusual_adventures.music_module.description_0": "§8Computer Component",
+      "item.unusual_adventures.music_module": "Program Disk",
+      "block.unusual_adventures.charged_null_block": "Charged Null",
+      "block.unusual_adventures.living_code_block": "Living Code",
+      "item.unusual_adventures.wallpaper_module": "Program Disk",
+      "item.unusual_adventures.wallpaper_module.description_0": "§8Computer Component",
+      "item.unusual_adventures.wallpaper_module.description_1": "§7\u003e Wallpaper Module",
+      "block.unusual_adventures.dimmed_charged_null_block": "Dimmed Charged Null",
+      "subtitles.music.nullspace": "",
+      "advancements.the_nullspace.title": "The Nullspace",
+      "advancements.the_nullspace.descr": "Somewhere, it already started.. long ago",
+      "advancements.find_overworld_lab.descr": "Find a Ruined Laboratory",
+      "advancements.find_overworld_lab.title": "Lost to time",
+      "advancements.enter_nullspace_rift.descr": "Enter the Nullspace by opening a Rift",
+      "advancements.enter_nullspace_rift.title": "Low-Proximity Magnetic Distorsion",
+      "block.unusual_adventures.null_extension": "Null Extension",
+      "advancements.use_computer.title": "Beep Boop",
+      "advancements.use_computer.descr": "Place a Computer",
+      "advancements.full_upgrade.title": "Why Did I Install This ?",
+      "advancements.full_upgrade.descr": "Launch a Computer equipped with 4 modules",
+      "block.unusual_adventures.banner.matrix_banner.white": "White Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.red": "Red Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.gray": "Gray Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.green": "Green Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.pink": "Pink Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.cyan": "Cyan Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.purple": "Purple Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.magenta": "Magenta Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.yellow": "Yellow Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.light_blue": "Light Blue Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.blue": "Blue Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.brown": "Brown Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.lime": "Lime Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.orange": "Orange Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.light_gray": "Light Gray Matrix Villager",
+      "block.unusual_adventures.banner.matrix_banner.black": "Black Matrix Villager",
+      "item.unusual_adventures.matrix_villager_banner_pattern.patterns": "Matrix Villager",
+      "item.unusual_adventures.matrix_villager_banner_pattern": "Banner Pattern",
+      "block.unusual_adventures.office_lamp": "Office Lamp",
+      "block.unusual_adventures.null_emitter.description_0": "§8\u003e Produces Bits particles",
+      "advancements.break_computer.descr": "Experiment with your Computer\u0027s waterproofness",
+      "advancements.break_computer.title": "Crashing Out",
+      "block.unusual_adventures.corrupted_lab_concrete": "Corrupted Laboratory Concrete",
+      "item.unusual_adventures.null_gauntlet": "Null Gauntlet",
+      "item.unusual_adventures.dash_module": "Program Chip",
+      "item.unusual_adventures.dash_module.description_0": "§8Null Gauntlet Component",
+      "item.unusual_adventures.dash_module.description_1": "§7\u003e Dash Module",
+      "item.unusual_adventures.heal_module": "Program Chip",
+      "item.unusual_adventures.heal_module.description_0": "§8Null Gauntlet Component",
+      "item.unusual_adventures.heal_module.description_1": "§7\u003e Healing Module",
+      "block.unusual_adventures.null_workbench": "Null Workbench",
+      "block.unusual_adventures.null_workbench.description_0": "§8\u003e Install Program Chips",
+      "item.unusual_adventures.no_module": "§7\u003e No Module",
+      "block.unusual_adventures.null_workbench.description_1": "§8\u003e Recharge Null Gauntlets",
+      "item.unusual_adventures.kb_module": "Program Chip",
+      "item.unusual_adventures.kb_module.description_0": "§8Null Gauntlet Component",
+      "item.unusual_adventures.kb_module.description_1": "§7\u003e Knockback Module",
+      "block.unusual_adventures.rusty_drawer.description_0": "§8\u003e Unique Hopper interactions",
+      "item.unusual_adventures.laser_module": "Program Chip",
+      "item.unusual_adventures.laser_module.description_1": "§7\u003e Laser Module",
+      "item.unusual_adventures.laser_module.description_0": "§8Null Gauntlet Component",
+      "block.unusual_adventures.short_desc": "§8- Ctrl for Info",
+      "gui.unusual_adventures.null_workbench_gui.tooltip_null_gauntlet": "Requiere :, Null Gauntlet, Program Chip, Living Code",
+      "gui.unusual_adventures.null_workbench_gui.tooltip_power_block": "Power Block (Recharge)",
+      "gui.unusual_adventures.null_workbench_gui.tooltip_chip": "Program Chip (Any)",
+      "gui.unusual_adventures.null_workbench_gui.label_upgrade": "Upgrade",
+      "gui.unusual_adventures.null_workbench_gui.tooltip_upgrade": "Will replace any existing chip",
+      "item.unusual_adventures.null_gauntlet.low_dura": "Not enough charge to use",
+      "block.unusual_adventures.office_lamp.description_0": "§8\u003e Interact to turn on/off",
+      "block.unusual_adventures.computer.description_0": "§8\u003e Can be used to execute Programs",
+      "block.unusual_adventures.computer.description_1": "§8\u003e More functions can be unlocked",
+      "block.unusual_adventures.computer.description_2": "§8  by using Program Disks",
+      "advancements.obtain_gauntlet.title": "Beyond Flesh",
+      "advancements.obtain_gauntlet.descr": "Craft a Null Gauntlet and a Null Workbench",
+      "item.unusual_adventures.use_workbench": "§8\u003e Install a Chip with,§8  a Null Workbench",
+      "advancements.encounter_living_code.title": "It’s Alive !",
+      "advancements.encounter_living_code.descr": "Interact with inactive Living Code",
+      "item.unusual_adventures.laboratory_plans": "Laboratory Plans",
+      "item.unusual_adventures.laboratory_plans.description_0": "§8\u003e Hold to use",
+      "item.unusual_adventures.laboratory_plans.fail": "Doesn\u0027t seems like it\u0027ll be useful in this dimension.."
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/unusualadventures/UnusualAdventuresMod.java",
+      "src/main/resources/unusual_adventures.mixins.json",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModTabs.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/unusual_adventures/sounds.json",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/unusualadventures/world/features/StructureFeature.java",
+      "src/main/java/net/mcreator/unusualadventures/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModMenus.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModScreens.java",
+      "src/main/java/net/mcreator/unusualadventures/network/MenuStateUpdateMessage.java",
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModParticleTypes.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModParticles.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModBrewingRecipes.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModTrades.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModBlocks.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModBlockEntities.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Functions",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Generation",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "unusual_adventures",
+    "modName": "Unusual Adventures",
+    "version": "1.0.0",
+    "description": "Program with Computers and explore Digital Landscapes",
+    "author": "Sweetygamer",
+    "websiteURL": "https://www.curseforge.com/members/sweetygamer/projects",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Sweety \u0026 Mcreator",
+    "modElementsPackage": "net.mcreator.unusualadventures"
+  },
+  "mcreatorVersion": 202500228610
+}

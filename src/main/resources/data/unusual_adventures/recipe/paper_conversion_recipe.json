@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "unusual_adventures:leftover_paper"
+    }
+  ],
+  "result": {
+    "id": "minecraft:paper",
+    "count": 1
+  }
+}

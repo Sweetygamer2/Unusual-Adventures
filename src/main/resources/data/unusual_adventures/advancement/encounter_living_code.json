@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "unusual_adventures:living_code_block"
+    },
+    "title": {
+      "translate": "advancements.encounter_living_code.title"
+    },
+    "description": {
+      "translate": "advancements.encounter_living_code.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "encounter_living_code_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "unusual_adventures:enter_nullspace_rift"
+}

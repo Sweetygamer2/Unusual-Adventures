@@ -1,0 +1,1 @@
+playsound minecraft:block.note_block.bit master @a ~ ~ ~ 0.8 1.3

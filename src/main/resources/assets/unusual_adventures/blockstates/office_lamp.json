@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "unusual_adventures:block/office_lamp"
+    },
+    "blockstate=1": {
+      "model": "unusual_adventures:block/office_lamp_off_blockstate_0"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "unusual_adventures:block/broken_code",
+    "particle": "unusual_adventures:block/broken_code"
+  },
+  "render_type": "solid"
+}

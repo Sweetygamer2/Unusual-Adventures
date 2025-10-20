@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "unusual_adventures:kb_module",
+    "unusual_adventures:laser_module",
+    "unusual_adventures:heal_module",
+    "unusual_adventures:dash_module"
+  ]
+}

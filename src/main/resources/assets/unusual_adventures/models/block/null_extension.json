@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "unusual_adventures:block/null_extension",
+    "particle": "unusual_adventures:block/null_extension"
+  },
+  "render_type": "cutout"
+}

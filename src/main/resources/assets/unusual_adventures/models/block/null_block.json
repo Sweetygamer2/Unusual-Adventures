@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "unusual_adventures:block/null",
+    "particle": "unusual_adventures:block/null"
+  },
+  "render_type": "solid"
+}

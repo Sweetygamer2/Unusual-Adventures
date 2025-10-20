@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.unusual_adventures.music_disc_bright_sunlight.desc"
+  },
+  "length_in_seconds": 222,
+  "sound_event": "unusual_adventures:music_disc_bright_sunlight"
+}

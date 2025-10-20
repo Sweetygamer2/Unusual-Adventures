@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "unusual_adventures:textures/screens/null_plating.png",
+    "icon": {
+      "id": "unusual_adventures:dimmed_charged_null_block"
+    },
+    "title": {
+      "translate": "advancements.the_nullspace.title"
+    },
+    "description": {
+      "translate": "advancements.the_nullspace.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "the_nullspace_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

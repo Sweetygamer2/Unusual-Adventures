@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "OfficeLamp",
+    "blockstateList": [
+      {
+        "texture": "office_lamp",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:polished_deepslate",
+        "renderType": 2,
+        "customModelName": "office_lamp:default",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

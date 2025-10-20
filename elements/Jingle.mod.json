@@ -1,0 +1,9 @@
+{
+  "_fv": 79,
+  "_type": "function",
+  "definition": {
+    "code": "function unusual_adventures:bit_130\nschedule function unusual_adventures:bit_085 3t\nschedule function unusual_adventures:bit_130 6t\nschedule function unusual_adventures:bit_085 9t\nschedule function unusual_adventures:bit_065 12t\nschedule function unusual_adventures:bit_085 15t",
+    "name": "jingle",
+    "namespace": "mod"
+  }
+}

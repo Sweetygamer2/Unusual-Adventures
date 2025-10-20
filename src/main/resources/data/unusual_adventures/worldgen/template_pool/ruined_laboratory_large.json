@@ -1,0 +1,17 @@
+{
+  "name": "unusual_adventures:ruined_laboratory_large",
+  "fallback": "unusual_adventures:ruined_laboratory_large",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "unusual_adventures:ov_large_1",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

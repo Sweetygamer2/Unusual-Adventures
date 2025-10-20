@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "unusual_adventures:small_lab_tiles_slab"
+    },
+    "b": {
+      "item": "unusual_adventures:lab_tiles"
+    }
+  },
+  "result": {
+    "id": "unusual_adventures:chiseled_lab_tiles",
+    "count": 2
+  }
+}

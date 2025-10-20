@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "unusual_adventures:block/lab_tiles",
+    "up": "unusual_adventures:block/small_lab_tiles",
+    "north": "unusual_adventures:block/chiseled_lab_tiles",
+    "east": "unusual_adventures:block/chiseled_lab_tiles",
+    "south": "unusual_adventures:block/chiseled_lab_tiles",
+    "west": "unusual_adventures:block/chiseled_lab_tiles",
+    "particle": "unusual_adventures:block/lab_tiles"
+  },
+  "render_type": "solid"
+}

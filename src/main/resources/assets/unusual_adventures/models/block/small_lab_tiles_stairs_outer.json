@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "unusual_adventures:block/small_lab_tiles",
+    "bottom": "unusual_adventures:block/small_lab_tiles",
+    "top": "unusual_adventures:block/small_lab_tiles",
+    "side": "unusual_adventures:block/small_lab_tiles"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "TAG:mod:laboratory_tile"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "TAG:mod:laboratory_tile"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:SmallLabTilesStairs"
+    },
+    "name": "lab_tiles_stairs_stonecutter",
+    "namespace": "mod"
+  }
+}

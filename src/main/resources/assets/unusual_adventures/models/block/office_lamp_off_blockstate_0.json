@@ -1,0 +1,9 @@
+{
+  "parent": "unusual_adventures:custom/office_lamp",
+  "textures": {
+    "all": "unusual_adventures:block/office_lamp",
+    "particle": "minecraft:block/polished_deepslate",
+    "0": "unusual_adventures:block/office_lamp"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "unusual_adventures:block/leftover_paper"
+    },
+    "facing=east": {
+      "model": "unusual_adventures:block/leftover_paper",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "unusual_adventures:block/leftover_paper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "unusual_adventures:block/leftover_paper",
+      "y": 270
+    }
+  }
+}

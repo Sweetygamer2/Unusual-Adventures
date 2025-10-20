@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a a",
+    "bcb",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "unusual_adventures:null_extension"
+    },
+    "b": {
+      "item": "unusual_adventures:charged_null_block"
+    },
+    "c": {
+      "item": "unusual_adventures:living_code_block"
+    },
+    "d": {
+      "item": "unusual_adventures:null_plating"
+    }
+  },
+  "result": {
+    "id": "unusual_adventures:null_workbench",
+    "count": 1
+  }
+}

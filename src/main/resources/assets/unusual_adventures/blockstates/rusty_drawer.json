@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "unusual_adventures:block/rusty_drawer"
+    },
+    "facing=east": {
+      "model": "unusual_adventures:block/rusty_drawer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "unusual_adventures:block/rusty_drawer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "unusual_adventures:block/rusty_drawer",
+      "y": 270
+    }
+  }
+}

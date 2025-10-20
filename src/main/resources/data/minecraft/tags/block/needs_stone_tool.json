@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "unusual_adventures:lab_tiles",
+    "unusual_adventures:null_plating",
+    "unusual_adventures:chiseled_lab_tiles",
+    "unusual_adventures:lab_concrete",
+    "unusual_adventures:small_lab_tiles_slab",
+    "unusual_adventures:mossy_lab_concrete",
+    "unusual_adventures:null_workbench",
+    "unusual_adventures:small_lab_tiles",
+    "unusual_adventures:tiled_null_plating",
+    "unusual_adventures:lab_concrete_stairs",
+    "unusual_adventures:small_lab_tiles_stairs",
+    "unusual_adventures:corrupted_lab_concrete",
+    "unusual_adventures:lab_concrete_slab",
+    "unusual_adventures:charged_null_plating",
+    "unusual_adventures:broken_lab_tiles",
+    "unusual_adventures:null_emitter",
+    "unusual_adventures:chiseled_null_plating"
+  ]
+}

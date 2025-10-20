@@ -1,0 +1,22 @@
+{
+  "music_disc_bright_sunlight": {
+    "sounds": [
+      {
+        "name": "unusual_adventures:bright_sunlight",
+        "stream": true
+      }
+    ]
+  },
+  "music.nullspace": {
+    "sounds": [
+      {
+        "name": "unusual_adventures:redwolf_bat",
+        "stream": true
+      },
+      {
+        "name": "unusual_adventures:redwolf_squid",
+        "stream": true
+      }
+    ]
+  }
+}

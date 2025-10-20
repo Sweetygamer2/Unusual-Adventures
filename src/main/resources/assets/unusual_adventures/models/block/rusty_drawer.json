@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "unusual_adventures:block/drawer_top",
+    "up": "unusual_adventures:block/drawer_top",
+    "north": "unusual_adventures:block/drawer_front",
+    "east": "unusual_adventures:block/drawer_side",
+    "south": "unusual_adventures:block/drawer_side",
+    "west": "unusual_adventures:block/drawer_side",
+    "particle": "unusual_adventures:block/drawer_top"
+  },
+  "render_type": "solid"
+}

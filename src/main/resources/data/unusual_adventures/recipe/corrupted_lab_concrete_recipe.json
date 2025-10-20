@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mossy_lab_concrete",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "unusual_adventures:lab_concrete"
+    },
+    {
+      "item": "unusual_adventures:null_block"
+    }
+  ],
+  "result": {
+    "id": "unusual_adventures:corrupted_lab_concrete",
+    "count": 1
+  }
+}

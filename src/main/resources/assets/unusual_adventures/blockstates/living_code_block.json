@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,blockstate=0": {
+      "model": "unusual_adventures:block/living_code_block"
+    },
+    "facing=east,blockstate=0": {
+      "model": "unusual_adventures:block/living_code_block",
+      "y": 90
+    },
+    "facing=south,blockstate=0": {
+      "model": "unusual_adventures:block/living_code_block",
+      "y": 180
+    },
+    "facing=west,blockstate=0": {
+      "model": "unusual_adventures:block/living_code_block",
+      "y": 270
+    },
+    "facing=north,blockstate=1": {
+      "model": "unusual_adventures:block/broken_code_blockstate_0"
+    },
+    "facing=east,blockstate=1": {
+      "model": "unusual_adventures:block/broken_code_blockstate_0",
+      "y": 90
+    },
+    "facing=south,blockstate=1": {
+      "model": "unusual_adventures:block/broken_code_blockstate_0",
+      "y": 180
+    },
+    "facing=west,blockstate=1": {
+      "model": "unusual_adventures:block/broken_code_blockstate_0",
+      "y": 270
+    }
+  }
+}

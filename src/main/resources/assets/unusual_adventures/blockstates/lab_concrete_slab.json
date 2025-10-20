@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unusual_adventures:block/lab_concrete_slab"
+    },
+    "type=top": {
+      "model": "unusual_adventures:block/lab_concrete_slab_top"
+    },
+    "type=double": {
+      "model": "unusual_adventures:block/lab_concrete_slab_full"
+    }
+  }
+}

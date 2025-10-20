@@ -1,0 +1,31 @@
+{
+  "feature": "unusual_adventures:living_code_patch",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 45
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 54
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "unusual_adventures:null_block"
+      }
+    }
+  ]
+}

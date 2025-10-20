@@ -1,0 +1,74 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Computer"
+      },
+      {
+        "value": "CUSTOM:BrokenComputer"
+      },
+      {
+        "value": "CUSTOM:AnalyseModule"
+      },
+      {
+        "value": "CUSTOM:RedstoneModule"
+      },
+      {
+        "value": "CUSTOM:ExperimentalModule"
+      },
+      {
+        "value": "CUSTOM:MusicModule"
+      },
+      {
+        "value": "CUSTOM:PoweredNullBlock"
+      },
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NullExtension"
+      },
+      {
+        "value": "CUSTOM:PoweredNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullExtension"
+      },
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": "CUSTOM:BrokenComputer"
+      },
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullExtension"
+      },
+      {
+        "value": "CUSTOM:PoweredNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullExtension"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Computer"
+    },
+    "name": "computer_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,47 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="unusual_adventures"
+version="1.0.0"
+displayName="Unusual Adventures"
+displayURL="https://www.curseforge.com/members/sweetygamer/projects"
+credits="Sweety & Mcreator"
+authors="Sweetygamer"
+description="Program with Computers and explore Digital Landscapes"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[mixins]]
+    config = "unusual_adventures.mixins.json"
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+[[dependencies.unusual_adventures]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.176,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.unusual_adventures]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.unusual_adventures]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "unusual_adventures:music_module"
+    },
+    "title": {
+      "translate": "advancements.full_upgrade.title"
+    },
+    "description": {
+      "translate": "advancements.full_upgrade.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "full_upgrade_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 60
+  },
+  "parent": "unusual_adventures:use_computer"
+}

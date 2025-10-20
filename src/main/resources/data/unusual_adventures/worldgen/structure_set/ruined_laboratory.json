@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "unusual_adventures:ruined_laboratory",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 65,
+    "separation": 50,
+    "salt": 1699977147
+  }
+}

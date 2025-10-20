@@ -1,0 +1,73 @@
+{
+  "_fv": 79,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:BinaryFields"
+      }
+    ],
+    "worldGenType": "End like gen",
+    "mainFillerBlock": {
+      "value": "Blocks.BLACKSTONE"
+    },
+    "fluidBlock": {
+      "value": "Blocks.BLACKSTONE"
+    },
+    "seaLevel": 55,
+    "generateOreVeins": false,
+    "generateAquifers": false,
+    "horizontalNoiseSize": 2,
+    "verticalNoiseSize": 1,
+    "defaultEffects": "overworld",
+    "useCustomEffects": true,
+    "hasClouds": false,
+    "cloudHeight": 192.0,
+    "skyType": "NORMAL",
+    "airColor": {
+      "value": -16773632,
+      "falpha": 0.0
+    },
+    "sunHeightAffectsFog": false,
+    "canRespawnHere": true,
+    "hasFog": false,
+    "ambientLight": 0.1,
+    "doesWaterVaporize": false,
+    "hasFixedTime": true,
+    "fixedTimeValue": 18000,
+    "coordinateScale": 0.2,
+    "infiniburnTag": "minecraft:infiniburn_overworld",
+    "bedWorks": false,
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "piglinSafe": false,
+    "hasRaids": false,
+    "minMonsterSpawnLightLimit": 0,
+    "maxMonsterSpawnLightLimit": 7,
+    "monsterSpawnBlockLightLimit": 0,
+    "portalFrame": {
+      "value": "CUSTOM:NullPlating"
+    },
+    "portalParticles": {
+      "value": "CUSTOM:Binary"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "ambient.crimson_forest.loop"
+    },
+    "enableIgniter": false,
+    "igniterName": "Nullspace Portal Igniter",
+    "igniterRarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "texture": "",
+    "portalTexture": "nullspace_portal",
+    "enablePortal": true
+  }
+}

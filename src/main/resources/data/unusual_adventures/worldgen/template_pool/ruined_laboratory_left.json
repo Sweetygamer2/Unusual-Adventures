@@ -1,0 +1,28 @@
+{
+  "name": "unusual_adventures:ruined_laboratory_left",
+  "fallback": "unusual_adventures:ruined_laboratory_left",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "unusual_adventures:ov_small_left_1",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "unusual_adventures:ov_small_left_2",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

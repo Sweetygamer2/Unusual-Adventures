@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "TAG:mod:laboratory_tile"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LabTiles"
+      },
+      {
+        "value": "CUSTOM:LabTiles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LabTiles"
+      },
+      {
+        "value": "CUSTOM:LabTiles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SmallLabTiles"
+    },
+    "name": "small_tiles_recipe",
+    "namespace": "mod"
+  }
+}

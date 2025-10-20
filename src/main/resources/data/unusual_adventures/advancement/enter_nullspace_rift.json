@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "unusual_adventures:charged_null_plating"
+    },
+    "title": {
+      "translate": "advancements.enter_nullspace_rift.title"
+    },
+    "description": {
+      "translate": "advancements.enter_nullspace_rift.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enter_nullspace_rift_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "unusual_adventures:nullspace"
+      }
+    }
+  },
+  "parent": "unusual_adventures:find_overworld_lab"
+}

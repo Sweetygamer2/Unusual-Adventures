@@ -1,0 +1,154 @@
+{
+  "variants": {
+    "state=off,facing=north": {
+      "model": "unusual_adventures:block/computer"
+    },
+    "state=off,facing=east": {
+      "model": "unusual_adventures:block/computer",
+      "y": 90
+    },
+    "state=off,facing=south": {
+      "model": "unusual_adventures:block/computer",
+      "y": 180
+    },
+    "state=off,facing=west": {
+      "model": "unusual_adventures:block/computer",
+      "y": 270
+    },
+    "state=logo,facing=north": {
+      "model": "unusual_adventures:block/computer_logo"
+    },
+    "state=logo,facing=east": {
+      "model": "unusual_adventures:block/computer_logo",
+      "y": 90
+    },
+    "state=logo,facing=south": {
+      "model": "unusual_adventures:block/computer_logo",
+      "y": 180
+    },
+    "state=logo,facing=west": {
+      "model": "unusual_adventures:block/computer_logo",
+      "y": 270
+    },
+    "state=coding,facing=north": {
+      "model": "unusual_adventures:block/computer_coding"
+    },
+    "state=coding,facing=east": {
+      "model": "unusual_adventures:block/computer_coding",
+      "y": 90
+    },
+    "state=coding,facing=south": {
+      "model": "unusual_adventures:block/computer_coding",
+      "y": 180
+    },
+    "state=coding,facing=west": {
+      "model": "unusual_adventures:block/computer_coding",
+      "y": 270
+    },
+    "state=warning,facing=north": {
+      "model": "unusual_adventures:block/computer_warning"
+    },
+    "state=warning,facing=east": {
+      "model": "unusual_adventures:block/computer_warning",
+      "y": 90
+    },
+    "state=warning,facing=south": {
+      "model": "unusual_adventures:block/computer_warning",
+      "y": 180
+    },
+    "state=warning,facing=west": {
+      "model": "unusual_adventures:block/computer_warning",
+      "y": 270
+    },
+    "state=message,facing=north": {
+      "model": "unusual_adventures:block/computer_message"
+    },
+    "state=message,facing=east": {
+      "model": "unusual_adventures:block/computer_message",
+      "y": 90
+    },
+    "state=message,facing=south": {
+      "model": "unusual_adventures:block/computer_message",
+      "y": 180
+    },
+    "state=message,facing=west": {
+      "model": "unusual_adventures:block/computer_message",
+      "y": 270
+    },
+    "state=background,facing=north": {
+      "model": "unusual_adventures:block/computer_background"
+    },
+    "state=background,facing=east": {
+      "model": "unusual_adventures:block/computer_background",
+      "y": 90
+    },
+    "state=background,facing=south": {
+      "model": "unusual_adventures:block/computer_background",
+      "y": 180
+    },
+    "state=background,facing=west": {
+      "model": "unusual_adventures:block/computer_background",
+      "y": 270
+    },
+    "state=console,facing=north": {
+      "model": "unusual_adventures:block/computer_console"
+    },
+    "state=console,facing=east": {
+      "model": "unusual_adventures:block/computer_console",
+      "y": 90
+    },
+    "state=console,facing=south": {
+      "model": "unusual_adventures:block/computer_console",
+      "y": 180
+    },
+    "state=console,facing=west": {
+      "model": "unusual_adventures:block/computer_console",
+      "y": 270
+    },
+    "state=scanning,facing=north": {
+      "model": "unusual_adventures:block/computer_scanning"
+    },
+    "state=scanning,facing=east": {
+      "model": "unusual_adventures:block/computer_scanning",
+      "y": 90
+    },
+    "state=scanning,facing=south": {
+      "model": "unusual_adventures:block/computer_scanning",
+      "y": 180
+    },
+    "state=scanning,facing=west": {
+      "model": "unusual_adventures:block/computer_scanning",
+      "y": 270
+    },
+    "state=music,facing=north": {
+      "model": "unusual_adventures:block/computer_music"
+    },
+    "state=music,facing=east": {
+      "model": "unusual_adventures:block/computer_music",
+      "y": 90
+    },
+    "state=music,facing=south": {
+      "model": "unusual_adventures:block/computer_music",
+      "y": 180
+    },
+    "state=music,facing=west": {
+      "model": "unusual_adventures:block/computer_music",
+      "y": 270
+    },
+    "state=game,facing=north": {
+      "model": "unusual_adventures:block/computer_game"
+    },
+    "state=game,facing=east": {
+      "model": "unusual_adventures:block/computer_game",
+      "y": 90
+    },
+    "state=game,facing=south": {
+      "model": "unusual_adventures:block/computer_game",
+      "y": 180
+    },
+    "state=game,facing=west": {
+      "model": "unusual_adventures:block/computer_game",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/frogspawn",
+  "textures": {
+    "texture": "unusual_adventures:block/paper_scrap",
+    "particle": "unusual_adventures:block/paper_scrap"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "unusual_adventures:null_laboratory",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 70,
+    "separation": 40,
+    "salt": 128161774
+  }
+}

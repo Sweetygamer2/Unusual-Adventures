@@ -1,0 +1,85 @@
+{
+  "_fv": 79,
+  "_type": "structure",
+  "definition": {
+    "structure": "ruined_lab_entrance",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 65,
+    "separation": 50,
+    "restrictionBiomes": [
+      {
+        "value": "mutated_redwood_taiga"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "redwood_taiga"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 3,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": [
+      {
+        "poolName": "left",
+        "fallbackPool": "unusual_adventures:ruined_laboratory_left",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "ov_small_left_1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "ov_small_left_2",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "right",
+        "fallbackPool": "unusual_adventures:ruined_laboratory_right",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "ov_small_1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "ov_small_2",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "large",
+        "fallbackPool": "unusual_adventures:ruined_laboratory_large",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "ov_large_1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

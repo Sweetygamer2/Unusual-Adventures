@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "unusual_adventures:lab_concrete"
+  },
+  "result": {
+    "id": "unusual_adventures:lab_concrete_stairs",
+    "count": 1
+  }
+}

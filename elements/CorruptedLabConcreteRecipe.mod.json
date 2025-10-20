@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "mossy_lab_concrete",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:NullBlock"
+      },
+      {
+        "value": "CUSTOM:LabConcrete"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LabConcrete"
+      },
+      {
+        "value": "CUSTOM:NullBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CorruptedLabConcrete"
+    },
+    "name": "corrupted_lab_concrete_recipe",
+    "namespace": "mod"
+  }
+}

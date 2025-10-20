@@ -1,0 +1,301 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 10,
+    "y_spread": 1,
+    "feature": {
+      "feature": {
+        "type": "minecraft:random_selector",
+        "config": {
+          "default": {
+            "feature": {
+              "type": "minecraft:random_patch",
+              "config": {
+                "tries": 12,
+                "y_spread": 4,
+                "feature": {
+                  "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "unusual_adventures:null_bits"
+                        }
+                      }
+                    }
+                  },
+                  "placement": [
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": "minecraft:air"
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": "#unusual_adventures:bits_valid",
+                            "offset": [
+                              0,
+                              -1,
+                              0
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "placement": []
+          },
+          "features": [
+            {
+              "chance": 0.6,
+              "feature": {
+                "feature": {
+                  "type": "minecraft:simple_random_selector",
+                  "config": {
+                    "features": [
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_1",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_2",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_3",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_4",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_5",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_6",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_7",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_8",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_9",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_10",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_11",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      },
+                      {
+                        "feature": {
+                          "type": "unusual_adventures:structure_feature",
+                          "config": {
+                            "structure": "unusual_adventures:null_tower_12",
+                            "random_rotation": true,
+                            "random_mirror": true,
+                            "ignored_blocks": "minecraft:air"
+                          }
+                        },
+                        "placement": []
+                      }
+                    ]
+                  }
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates": [
+                        {
+                          "type": "minecraft:solid",
+                          "offset": [
+                            0,
+                            -1,
+                            0
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "blocks": "minecraft:air"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "chance": 0.4,
+              "feature": {
+                "feature": {
+                  "type": "minecraft:random_patch",
+                  "config": {
+                    "tries": 14,
+                    "y_spread": 4,
+                    "feature": {
+                      "feature": {
+                        "type": "minecraft:simple_block",
+                        "config": {
+                          "to_place": {
+                            "type": "minecraft:weighted_state_provider",
+                            "entries": [
+                              {
+                                "data": {
+                                  "Name": "unusual_adventures:null_bits"
+                                },
+                                "weight": 4
+                              },
+                              {
+                                "data": {
+                                  "Name": "unusual_adventures:null_extension"
+                                },
+                                "weight": 1
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "placement": [
+                        {
+                          "type": "minecraft:block_predicate_filter",
+                          "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:air"
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "#unusual_adventures:bits_valid",
+                                "offset": [
+                                  0,
+                                  -1,
+                                  0
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "placement": []
+              }
+            }
+          ]
+        }
+      },
+      "placement": []
+    }
+  }
+}

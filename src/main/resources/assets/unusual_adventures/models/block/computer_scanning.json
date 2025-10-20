@@ -1,0 +1,10 @@
+{
+  "parent": "unusual_adventures:custom/computer",
+  "textures": {
+    "all": "unusual_adventures:block/computer",
+    "particle": "unusual_adventures:block/screen_1",
+    "2": "unusual_adventures:block/computer",
+    "3": "unusual_adventures:block/scan_screen"
+  },
+  "render_type": "solid"
+}
