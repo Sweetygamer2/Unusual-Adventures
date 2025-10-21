@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "search_radius": 60,
+              "destination": "unusual_adventures:on_null_lab_explorer_maps",
+              "decoration": "red_x",
+              "skip_existing_chunks": false,
+              "zoom": 4
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.unusual_adventures.laboratory_plans",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [],
+  "random_sequence": "unusual_adventures:gameplay/null_lab_map"
+}

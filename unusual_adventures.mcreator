@@ -2348,6 +2348,74 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "NullLabMap",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "null_lab_map",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/loot_table/gameplay/null_lab_map.json"
+        ]
+      }
+    },
+    {
+      "name": "DashDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/dash_duplicate.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/dash_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HealDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/heal_duplicate.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/heal_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "KbDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kb_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/kb_duplicate.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/kb_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "LaserDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/laser_duplicate.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/laser_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -2469,6 +2537,9 @@
     ],
     "STRUCTURES:mod:on_lab_explorer_maps": [
       "CUSTOM:RuinedLaboratory"
+    ],
+    "STRUCTURES:mod:on_null_lab_explorer_maps": [
+      "CUSTOM:NullLaboratory"
     ]
   },
   "tab_element_order": {
@@ -2698,7 +2769,7 @@
   "workspaceSettings": {
     "modid": "unusual_adventures",
     "modName": "Unusual Adventures",
-    "version": "1.0.0",
+    "version": "1.0.0d",
     "description": "Program with Computers and explore Digital Landscapes",
     "author": "Sweetygamer",
     "websiteURL": "https://www.curseforge.com/members/sweetygamer/projects",

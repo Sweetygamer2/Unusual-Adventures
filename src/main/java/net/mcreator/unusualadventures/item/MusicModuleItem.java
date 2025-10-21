@@ -13,7 +13,7 @@ import java.util.List;
 
 public class MusicModuleItem extends Item {
 	public MusicModuleItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

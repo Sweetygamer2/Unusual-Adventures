@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chip_duplicate",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "unusual_adventures:null_plating"
+    },
+    "b": {
+      "item": "unusual_adventures:living_code_block"
+    },
+    "c": {
+      "item": "unusual_adventures:kb_module"
+    }
+  },
+  "result": {
+    "id": "unusual_adventures:kb_module",
+    "count": 2
+  }
+}

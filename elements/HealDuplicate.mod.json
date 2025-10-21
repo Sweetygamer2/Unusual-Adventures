@@ -3,57 +3,51 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
+    "recipeRetstackSize": 2,
+    "group": "chip_duplicate",
     "unlockingItems": [
       {
-        "value": "CUSTOM:NullEmitter"
-      },
-      {
-        "value": "CUSTOM:PoweredNullBlock"
-      },
-      {
-        "value": "CUSTOM:NullGauntlet"
+        "value": "CUSTOM:HealModule"
       }
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "EQUIPMENT",
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": "CUSTOM:NullPlating"
       },
       {
-        "value": "CUSTOM:ChargedNullPlating"
+        "value": "CUSTOM:PoweredNullBlock"
       },
       {
         "value": "CUSTOM:NullPlating"
       },
       {
-        "value": "CUSTOM:NullExtension"
+        "value": "CUSTOM:NullPlating"
       },
       {
-        "value": "CUSTOM:NullEmitter"
-      },
-      {
-        "value": "CUSTOM:NullExtension"
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:HealModule"
       },
       {
         "value": "CUSTOM:NullPlating"
       },
       {
-        "value": ""
+        "value": "CUSTOM:NullPlating"
+      },
+      {
+        "value": "CUSTOM:PoweredNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullPlating"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:NullGauntlet"
+      "value": "CUSTOM:HealModule"
     },
-    "name": "null_gauntlet_recipe",
+    "name": "heal_duplicate",
     "namespace": "mod"
   }
 }
