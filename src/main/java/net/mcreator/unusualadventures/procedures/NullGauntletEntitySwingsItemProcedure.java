@@ -5,6 +5,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -19,6 +20,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -27,6 +29,8 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.unusualadventures.init.UnusualAdventuresModParticleTypes;
 
@@ -66,16 +70,18 @@ public class NullGauntletEntitySwingsItemProcedure {
 					entity.push((entity.getLookAngle().x * 1.2), (entity.getLookAngle().y * 0.6), (entity.getLookAngle().z * 1.2));
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 6);
-					if (world instanceof ServerLevel _level) {
-						itemstack.hurtAndBreak(40, _level, null, _stkprov -> {
-						});
-					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.breeze.slide")), SoundSource.PLAYERS, (float) 1.1,
 									(float) Mth.nextDouble(RandomSource.create(), 1.4, 1.6));
 						} else {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.breeze.slide")), SoundSource.PLAYERS, (float) 1.1, (float) Mth.nextDouble(RandomSource.create(), 1.4, 1.6), false);
+						}
+					}
+					if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
+						if (world instanceof ServerLevel _level) {
+							itemstack.hurtAndBreak(40, _level, null, _stkprov -> {
+							});
 						}
 					}
 				} else {
@@ -99,10 +105,6 @@ public class NullGauntletEntitySwingsItemProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 50, 3));
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 200);
-					if (world instanceof ServerLevel _level) {
-						itemstack.hurtAndBreak(100, _level, null, _stkprov -> {
-						});
-					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.trial_spawner.spawn_item_begin")), SoundSource.PLAYERS, (float) 1.3,
@@ -110,6 +112,12 @@ public class NullGauntletEntitySwingsItemProcedure {
 						} else {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.trial_spawner.spawn_item_begin")), SoundSource.PLAYERS, (float) 1.3, (float) Mth.nextDouble(RandomSource.create(), 0.6, 0.9),
 									false);
+						}
+					}
+					if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
+						if (world instanceof ServerLevel _level) {
+							itemstack.hurtAndBreak(100, _level, null, _stkprov -> {
+							});
 						}
 					}
 				} else {
@@ -127,9 +135,11 @@ public class NullGauntletEntitySwingsItemProcedure {
 					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
-					if (world instanceof ServerLevel _level) {
-						itemstack.hurtAndBreak(40, _level, null, _stkprov -> {
-						});
+					if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
+						if (world instanceof ServerLevel _level) {
+							itemstack.hurtAndBreak(40, _level, null, _stkprov -> {
+							});
+						}
 					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
@@ -196,5 +206,16 @@ public class NullGauntletEntitySwingsItemProcedure {
 				}
 			}
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

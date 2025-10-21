@@ -18,10 +18,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -557,6 +560,13 @@ public class ExecuteCommandProcedure {
 					Direction facing = world.getBlockState(BlockPos.containing(x, y, z)).getValue(BlockStateProperties.HORIZONTAL_FACING);
 					if (world instanceof Level _level)
 						NullspacePortalBlock.portalSpawn(_level, BlockPos.containing(x, y, z).relative(facing.getOpposite()).relative(facing.getClockWise()));
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.respawn_anchor.set_spawn")), SoundSource.BLOCKS, (float) 0.9, 2);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.respawn_anchor.set_spawn")), SoundSource.BLOCKS, (float) 0.9, 2, false);
+						}
+					}
 					if (entity instanceof Player _player && _player.containerMenu instanceof UnusualAdventuresModMenus.MenuAccessor _menu)
 						_menu.sendMenuStateUpdate(_player, 0, "console", "", true);
 					if (!world.isClientSide()) {

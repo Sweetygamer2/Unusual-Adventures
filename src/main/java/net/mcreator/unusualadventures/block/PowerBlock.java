@@ -42,4 +42,19 @@ public class PowerBlock extends Block {
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
 	}
+
+	@Override
+	public boolean isSignalSource(BlockState state) {
+		return true;
+	}
+
+	@Override
+	public int getSignal(BlockState blockstate, BlockGetter blockAccess, BlockPos pos, Direction direction) {
+		return 15;
+	}
+
+	@Override
+	public boolean canConnectRedstone(BlockState state, BlockGetter world, BlockPos pos, Direction side) {
+		return true;
+	}
 }
