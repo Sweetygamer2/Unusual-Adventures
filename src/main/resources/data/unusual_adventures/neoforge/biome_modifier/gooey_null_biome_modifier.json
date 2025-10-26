@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "unusual_adventures:binary_fields",
+  "spawners": {
+    "type": "unusual_adventures:gooey_null",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "disk_duplication",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "unusual_adventures:blank_program_disk"
+    },
+    {
+      "item": "unusual_adventures:music_module"
+    }
+  ],
+  "result": {
+    "id": "unusual_adventures:music_module",
+    "count": 2
+  }
+}

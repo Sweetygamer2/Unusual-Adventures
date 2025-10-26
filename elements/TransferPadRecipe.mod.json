@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullEmitter"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullBlock"
+      },
+      {
+        "value": "CUSTOM:ChargedNullBlock"
+      },
+      {
+        "value": "CUSTOM:NullPlating"
+      },
+      {
+        "value": "CUSTOM:NullEmitter"
+      },
+      {
+        "value": "CUSTOM:NullPlating"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TransferPad"
+    },
+    "name": "transfer_pad_recipe",
+    "namespace": "mod"
+  }
+}

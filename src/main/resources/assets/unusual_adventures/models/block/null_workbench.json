@@ -2,8 +2,8 @@
   "parent": "unusual_adventures:custom/null_workbench",
   "textures": {
     "all": "unusual_adventures:block/null_workbench",
-    "particle": "unusual_adventures:block/dimmed_charged_null",
-    "4": "unusual_adventures:block/null_workbench"
+    "particle": "unusual_adventures:block/null_plating",
+    "7": "unusual_adventures:block/null_workbench"
   },
   "render_type": "cutout_mipped"
 }

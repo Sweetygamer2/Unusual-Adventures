@@ -1,0 +1,9 @@
+{
+  "parent": "unusual_adventures:custom/transfer_pad",
+  "textures": {
+    "all": "unusual_adventures:block/null_workbench",
+    "particle": "unusual_adventures:block/null_plating",
+    "3": "unusual_adventures:block/transfer_pad"
+  },
+  "render_type": "solid"
+}

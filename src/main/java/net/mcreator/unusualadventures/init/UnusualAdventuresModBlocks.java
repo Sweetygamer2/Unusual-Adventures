@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.unusualadventures.block.TransferPadBlock;
 import net.mcreator.unusualadventures.block.TiledNullPlatingBlock;
 import net.mcreator.unusualadventures.block.SmallLabTilesStairsBlock;
 import net.mcreator.unusualadventures.block.SmallLabTilesSlabBlock;
@@ -74,6 +75,7 @@ public class UnusualAdventuresModBlocks {
 	public static final DeferredBlock<Block> OFFICE_LAMP = REGISTRY.register("office_lamp", OfficeLampBlock::new);
 	public static final DeferredBlock<Block> CORRUPTED_LAB_CONCRETE = REGISTRY.register("corrupted_lab_concrete", CorruptedLabConcreteBlock::new);
 	public static final DeferredBlock<Block> NULL_WORKBENCH = REGISTRY.register("null_workbench", NullWorkbenchBlock::new);
+	public static final DeferredBlock<Block> TRANSFER_PAD = REGISTRY.register("transfer_pad", TransferPadBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

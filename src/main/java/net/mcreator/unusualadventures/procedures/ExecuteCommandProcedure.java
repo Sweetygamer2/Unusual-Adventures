@@ -15,17 +15,20 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
@@ -70,6 +73,69 @@ public class ExecuteCommandProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
+		} else if (input.startsWith("transfer link")) {
+			slot = 0;
+			for (int index0 = 0; index0 < 4; index0++) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.TRANSFER_MODULE.get()) {
+					if (entity instanceof Player _player && _player.containerMenu instanceof UnusualAdventuresModMenus.MenuAccessor _menu)
+						_menu.sendMenuStateUpdate(_player, 0, "console", "", true);
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("bound") == true) {
+						if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("unusual_adventures:nullspace"))) {
+							if (!world.isClientSide()) {
+								BlockPos _bp = BlockPos.containing(x, y, z);
+								BlockEntity _blockEntity = world.getBlockEntity(_bp);
+								BlockState _bs = world.getBlockState(_bp);
+								if (_blockEntity != null)
+									_blockEntity.getPersistentData().putString("Answer", "");
+								if (world instanceof Level _level)
+									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+							}
+							if (!world.isClientSide()) {
+								BlockPos _bp = BlockPos.containing(x, y, z);
+								BlockEntity _blockEntity = world.getBlockEntity(_bp);
+								BlockState _bs = world.getBlockState(_bp);
+								if (_blockEntity != null)
+									_blockEntity.getPersistentData().putString("CodingState", "tp");
+								if (world instanceof Level _level)
+									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+							}
+							{
+								String _value = "coding";
+								BlockPos _pos = BlockPos.containing(x, y, z);
+								BlockState _bs = world.getBlockState(_pos);
+								if (_bs.getBlock().getStateDefinition().getProperty("state") instanceof EnumProperty _enumProp && _enumProp.getValue(_value).isPresent())
+									world.setBlock(_pos, _bs.setValue(_enumProp, (Enum) _enumProp.getValue(_value).get()), 3);
+							}
+							if (world instanceof Level _level)
+								_level.updateNeighborsAt(BlockPos.containing(x, y, z), _level.getBlockState(BlockPos.containing(x, y, z)).getBlock());
+							if (entity instanceof Player _player)
+								_player.closeContainer();
+							break;
+						} else {
+							if (!world.isClientSide()) {
+								BlockPos _bp = BlockPos.containing(x, y, z);
+								BlockEntity _blockEntity = world.getBlockEntity(_bp);
+								BlockState _bs = world.getBlockState(_bp);
+								if (_blockEntity != null)
+									_blockEntity.getPersistentData().putString("Answer", "Only works in the Nullspace");
+								if (world instanceof Level _level)
+									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+							}
+						}
+					} else {
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putString("Answer", "Disk has to be linked to a Transfer Pad");
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+					}
+				}
+				slot = slot + 1;
+			}
 		} else if (input.startsWith("disk")) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof UnusualAdventuresModMenus.MenuAccessor _menu)
 				_menu.sendMenuStateUpdate(_player, 0, "console", "", true);
@@ -84,7 +150,7 @@ public class ExecuteCommandProcedure {
 			}
 		} else if (input.startsWith("time")) {
 			slot = 0;
-			for (int index0 = 0; index0 < 4; index0++) {
+			for (int index1 = 0; index1 < 4; index1++) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.ANALYSE_MODULE.get()) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof UnusualAdventuresModMenus.MenuAccessor _menu)
 						_menu.sendMenuStateUpdate(_player, 0, "console", "", true);
@@ -141,7 +207,7 @@ public class ExecuteCommandProcedure {
 			}
 		} else if (input.startsWith("power ")) {
 			slot = 0;
-			for (int index1 = 0; index1 < 4; index1++) {
+			for (int index2 = 0; index2 < 4; index2++) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.REDSTONE_MODULE.get()) {
 					if (new Object() {
 						double convert(String s) {
@@ -223,7 +289,7 @@ public class ExecuteCommandProcedure {
 			}
 		} else if (input.startsWith("clock ")) {
 			slot = 0;
-			for (int index2 = 0; index2 < 4; index2++) {
+			for (int index3 = 0; index3 < 4; index3++) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.REDSTONE_MODULE.get()) {
 					if (new Object() {
 						double convert(String s) {
@@ -335,7 +401,7 @@ public class ExecuteCommandProcedure {
 				_player.closeContainer();
 		} else if (input.startsWith("play ")) {
 			slot = 0;
-			for (int index3 = 0; index3 < 4; index3++) {
+			for (int index4 = 0; index4 < 4; index4++) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.MUSIC_MODULE.get()) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof UnusualAdventuresModMenus.MenuAccessor _menu)
 						_menu.sendMenuStateUpdate(_player, 0, "console", "", true);
@@ -439,7 +505,7 @@ public class ExecuteCommandProcedure {
 				_player.closeContainer();
 		} else if (input.startsWith("scan")) {
 			slot = 0;
-			for (int index4 = 0; index4 < 4; index4++) {
+			for (int index5 = 0; index5 < 4; index5++) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.ANALYSE_MODULE.get()) {
 					if ((input.substring(5, 11)).equals("player") || (input.substring(5, 12)).equals("monster") || (input.substring(5, 9)).equals("both")) {
 						if (new Object() {
@@ -555,7 +621,7 @@ public class ExecuteCommandProcedure {
 			}
 		} else if (input.startsWith("rift open")) {
 			slot = 0;
-			for (int index5 = 0; index5 < 4; index5++) {
+			for (int index6 = 0; index6 < 4; index6++) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.EXPERIMENTAL_MODULE.get()) {
 					Direction facing = world.getBlockState(BlockPos.containing(x, y, z)).getValue(BlockStateProperties.HORIZONTAL_FACING);
 					if (world instanceof Level _level)
@@ -574,7 +640,7 @@ public class ExecuteCommandProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putString("Answer", "Rift opened..");
+							_blockEntity.getPersistentData().putString("Answer", "Rift formation attempted...");
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -595,6 +661,16 @@ public class ExecuteCommandProcedure {
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
 						_blockEntity.getPersistentData().putString("Answer", ("Broadcast your message with special" + System.lineSeparator() + "formatting"));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			} else if ((input.substring(5)).startsWith("transfer")) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putString("Answer", ("Set destination of Transfer Pads next to" + System.lineSeparator() + "this block to the Pad the Disk is linked to"));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}

@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.unusualadventures.block.entity.TransferPadBlockEntity;
 import net.mcreator.unusualadventures.block.entity.RustyDrawerBlockEntity;
 import net.mcreator.unusualadventures.block.entity.NullWorkbenchBlockEntity;
 import net.mcreator.unusualadventures.block.entity.ComputerBlockEntity;
@@ -29,6 +30,7 @@ public class UnusualAdventuresModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BrokenComputerBlockEntity>> BROKEN_COMPUTER = register("broken_computer", UnusualAdventuresModBlocks.BROKEN_COMPUTER, BrokenComputerBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RustyDrawerBlockEntity>> RUSTY_DRAWER = register("rusty_drawer", UnusualAdventuresModBlocks.RUSTY_DRAWER, RustyDrawerBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NullWorkbenchBlockEntity>> NULL_WORKBENCH = register("null_workbench", UnusualAdventuresModBlocks.NULL_WORKBENCH, NullWorkbenchBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<TransferPadBlockEntity>> TRANSFER_PAD = register("transfer_pad", UnusualAdventuresModBlocks.TRANSFER_PAD, TransferPadBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -42,5 +44,6 @@ public class UnusualAdventuresModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BROKEN_COMPUTER.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, RUSTY_DRAWER.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NULL_WORKBENCH.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, TRANSFER_PAD.get(), SidedInvWrapper::new);
 	}
 }

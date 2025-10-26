@@ -21,6 +21,7 @@ public class HelpCommandProcedure {
 		String clock = "";
 		String wallpaper = "";
 		String tp = "";
+		String transfer = "";
 		for (int index0 = 0; index0 < 4; index0++) {
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.MUSIC_MODULE.get()) {
 				music = "MUSIC (loop) : play <1-" + world.registryAccess().registryOrThrow(Registries.JUKEBOX_SONG).size() + ">" + System.lineSeparator();
@@ -36,12 +37,15 @@ public class HelpCommandProcedure {
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.WALLPAPER_MODULE.get()) {
 				wallpaper = "WALLPAPER : wallpaper" + System.lineSeparator();
 			}
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.TRANSFER_MODULE.get()) {
+				transfer = "TELEPORTATION : transfer link" + System.lineSeparator();
+			}
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) slot).copy()).getItem() == UnusualAdventuresModItems.EXPERIMENTAL_MODULE.get()) {
-				tp = "NULLSPACE : rift <open>" + System.lineSeparator();
+				tp = "NULLSPACE : rift open" + System.lineSeparator();
 			}
 			slot = slot + 1;
 		}
-		return "MESSAGE : print <message>" + System.lineSeparator() + music + time + scan + power + clock + wallpaper + tp + "---" + System.lineSeparator() + "INSTALL PROGRAMS : disk" + System.lineSeparator() + "HELP : help <command>"
+		return "MESSAGE : print <message>" + System.lineSeparator() + music + time + scan + power + clock + transfer + tp + wallpaper + "---" + System.lineSeparator() + "INSTALL PROGRAMS : disk" + System.lineSeparator() + "HELP : help <command>"
 				+ System.lineSeparator() + "STOP : shutdown" + System.lineSeparator();
 	}
 

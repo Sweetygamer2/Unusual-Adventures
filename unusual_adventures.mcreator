@@ -2416,6 +2416,426 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "ReturnCombat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_combat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ReturnCombatProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ReturnNotAlive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_not_alive",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ReturnNotAliveProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GooeyNull",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gooey_null",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/gooey_null_spawn_egg.json",
+          "src/main/java/net/mcreator/unusualadventures/entity/GooeyNullEntity.java",
+          "src/main/resources/data/unusual_adventures/neoforge/biome_modifier/gooey_null_biome_modifier.json",
+          "src/main/java/net/mcreator/unusualadventures/client/renderer/GooeyNullRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ReturnIdle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_idle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/ReturnIdleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GooeyNullNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gooey_null_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/GooeyNullNaturalEntitySpawningConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GooeyNullOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gooey_null_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/GooeyNullOnEntityTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GooeyNullEmerge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gooey_null_emerge",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/GooeyNullEmergeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GooeyNullDive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gooey_null_dive",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/GooeyNullDiveProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BlankProgramDisk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blank_program_disk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/blank_program_disk.json",
+          "src/main/java/net/mcreator/unusualadventures/item/BlankProgramDiskItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AnalyseModuleDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "analyse_module_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/analyse_module_duplicate.json",
+          "src/main/resources/data/unusual_adventures/recipe/analyse_module_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RedstoneModuleDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_module_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/redstone_module_duplicate.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/redstone_module_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "MusicModuleDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "music_module_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/music_module_duplicate.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/music_module_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "WallpaperModuleDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallpaper_module_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/wallpaper_module_duplicate.json",
+          "src/main/resources/data/unusual_adventures/recipe/wallpaper_module_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ExperimentalModuleDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experimental_module_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/recipe/experimental_module_duplicate.json",
+          "src/main/resources/data/unusual_adventures/advancement/recipes/experimental_module_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TransferPad",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "transfer_pad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/block/TransferPadBlock.java",
+          "src/main/resources/assets/unusual_adventures/models/item/transfer_pad.json",
+          "src/main/resources/data/unusual_adventures/loot_table/blocks/transfer_pad.json",
+          "src/main/resources/assets/unusual_adventures/models/block/transfer_pad.json",
+          "src/main/java/net/mcreator/unusualadventures/block/entity/TransferPadBlockEntity.java",
+          "src/main/resources/assets/unusual_adventures/blockstates/transfer_pad.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TransferModule",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "transfer_module",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/unusual_adventures/models/item/transfer_module.json",
+          "src/main/java/net/mcreator/unusualadventures/item/TransferModuleItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TransferModuleDuplicate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transfer_module_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/transfer_module_duplicate.json",
+          "src/main/resources/data/unusual_adventures/recipe/transfer_module_duplicate.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TransferModuleRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transfer_module_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/TransferModuleRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TransferPadEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transfer_pad_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/TransferPadEntityWalksOnTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TransferPadOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transfer_pad_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/unusualadventures/procedures/TransferPadOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TransferPadRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transfer_pad_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/recipes/transfer_pad_recipe.json",
+          "src/main/resources/data/unusual_adventures/recipe/transfer_pad_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -2441,6 +2861,7 @@
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:TransferPad",
       "~CUSTOM:NullBlock",
       "~CUSTOM:DimmedChargedNullBlock",
       "~CUSTOM:ChargedNullBlock",
@@ -2465,6 +2886,7 @@
       "~CUSTOM:NullPlating"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:TransferPad",
       "~CUSTOM:NullWorkbench",
       "~CUSTOM:CorruptedLabConcrete",
       "~CUSTOM:ChiseledLabTiles",
@@ -2488,7 +2910,8 @@
       "CUSTOM:RedstoneModule",
       "CUSTOM:ExperimentalModule",
       "CUSTOM:MusicModule",
-      "CUSTOM:WallpaperModule"
+      "CUSTOM:WallpaperModule",
+      "CUSTOM:TransferModule"
     ],
     "BLOCKS:mod:bits_valid": [
       "CUSTOM:NullBlock",
@@ -2546,22 +2969,20 @@
     "CUSTOM:UnusualAdventures": [
       "Computer",
       "BrokenComputer",
+      "BlankProgramDisk",
       "AnalyseModule",
       "RedstoneModule",
+      "TransferModule",
       "MusicModule",
       "WallpaperModule",
       "ExperimentalModule",
-      "RustyDrawer",
-      "OfficeLamp",
       "NullGauntlet",
       "DashModule",
       "HealModule",
       "KbModule",
       "LaserModule",
       "NullWorkbench",
-      "ChargedNullPlating",
-      "NullEmitter",
-      "Power",
+      "TransferPad",
       "NullBits",
       "NullExtension",
       "NullBlock",
@@ -2571,6 +2992,9 @@
       "NullPlating",
       "ChiseledNullPlating",
       "TiledNullPlating",
+      "ChargedNullPlating",
+      "NullEmitter",
+      "Power",
       "CorruptedLabConcrete",
       "MossyLabConcrete",
       "LabConcrete",
@@ -2582,11 +3006,14 @@
       "SmallLabTiles",
       "SmallLabTilesStairs",
       "SmallLabTilesSlab",
+      "RustyDrawer",
       "BrokenLight",
+      "OfficeLamp",
       "LeftoverPaper",
       "MatrixVillagerBannerPattern",
       "LaboratoryPlans",
-      "MusicDiscBrightSunlight"
+      "MusicDiscBrightSunlight",
+      "GooeyNull"
     ]
   },
   "language_map": {
@@ -2713,7 +3140,27 @@
       "advancements.encounter_living_code.descr": "Interact with inactive Living Code",
       "item.unusual_adventures.laboratory_plans": "Laboratory Plans",
       "item.unusual_adventures.laboratory_plans.description_0": "§8\u003e Hold to use",
-      "item.unusual_adventures.laboratory_plans.fail": "Doesn\u0027t seems like it\u0027ll be useful in this dimension.."
+      "item.unusual_adventures.laboratory_plans.fail": "Doesn\u0027t seems like it\u0027ll be useful in this dimension..",
+      "entity.unusual_adventures.gooey_null": "Gooey Null",
+      "item.unusual_adventures.gooey_null_spawn_egg": "Gooey Null Spawn Egg",
+      "item.unusual_adventures.blank_program_disk.description_1": "§7\u003e Blank",
+      "item.unusual_adventures.blank_program_disk.description_0": "§8Computer Component",
+      "item.unusual_adventures.blank_program_disk": "Blank Program Disk",
+      "block.unusual_adventures.transfer_pad": "Transfer Pad",
+      "item.unusual_adventures.transfer_module.description_0": "§8Computer Component",
+      "item.unusual_adventures.transfer_module.description_1": "§7\u003e Tranfer Module",
+      "item.unusual_adventures.transfer_module": "Program Disk",
+      "item.unusual_adventures.transfer_module.description_2": "§8\u003e Can link to a Transfer Pad",
+      "item.unusual_adventures.transfer_module.description_3": "§8\u003e Only works in the Nullspace",
+      "item.unusual_adventures.transfer_module.description_4": "§7Current linked Coords : ",
+      "item.unusual_adventures.transfer_module.cooldown": "Under cooldown...",
+      "item.unusual_adventures.transfer_module.damage": "Missing Transfer Pad at destination - Incomplete materialization",
+      "block.unusual_adventures.transfer_pad.description_0": "§7To Teleport :§8 (Only in Nullspace)",
+      "block.unusual_adventures.transfer_pad.description_1": "§8\u003e Has to be next to a Computer ",
+      "block.unusual_adventures.transfer_pad.description_2": "§8  running the Transfer program",
+      "block.unusual_adventures.transfer_pad.description_3": "§8\u003e The Program Disk in the Computer",
+      "block.unusual_adventures.transfer_pad.description_4": "§8  has to be linked to another Transfer",
+      "block.unusual_adventures.transfer_pad.description_5": "§8  Pad, used as destination"
     }
   },
   "metadata": {
@@ -2726,6 +3173,7 @@
       "src/main/resources/assets/unusual_adventures/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModModels.java",
       "src/main/java/net/mcreator/unusualadventures/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/unusualadventures/world/features/configurations/StructureFeatureConfiguration.java",
       "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModMenus.java",
@@ -2738,7 +3186,9 @@
       "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModTrades.java",
       "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModBlocks.java",
       "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModBlockEntities.java",
-      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModItems.java"
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModItems.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModEntityRenderers.java",
+      "src/main/java/net/mcreator/unusualadventures/init/UnusualAdventuresModEntities.java"
     ]
   },
   "foldersRoot": {
@@ -2769,7 +3219,7 @@
   "workspaceSettings": {
     "modid": "unusual_adventures",
     "modName": "Unusual Adventures",
-    "version": "1.0.0d",
+    "version": "1.1.0",
     "description": "Program with Computers and explore Digital Landscapes",
     "author": "Sweetygamer",
     "websiteURL": "https://www.curseforge.com/members/sweetygamer/projects",

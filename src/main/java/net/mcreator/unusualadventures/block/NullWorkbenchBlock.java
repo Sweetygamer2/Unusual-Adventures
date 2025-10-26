@@ -80,7 +80,7 @@ public class NullWorkbenchBlock extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(0, 0, 0, 16, 14, 16);
+		return box(0, 0, 0, 16, 10, 16);
 	}
 
 	@Override

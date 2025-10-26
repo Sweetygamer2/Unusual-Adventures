@@ -24,6 +24,7 @@ import net.mcreator.unusualadventures.init.UnusualAdventuresModSounds;
 import net.mcreator.unusualadventures.init.UnusualAdventuresModParticleTypes;
 import net.mcreator.unusualadventures.init.UnusualAdventuresModMenus;
 import net.mcreator.unusualadventures.init.UnusualAdventuresModItems;
+import net.mcreator.unusualadventures.init.UnusualAdventuresModEntities;
 import net.mcreator.unusualadventures.init.UnusualAdventuresModBlocks;
 import net.mcreator.unusualadventures.init.UnusualAdventuresModBlockEntities;
 
@@ -48,6 +49,7 @@ public class UnusualAdventuresMod {
 		UnusualAdventuresModBlocks.REGISTRY.register(modEventBus);
 		UnusualAdventuresModBlockEntities.REGISTRY.register(modEventBus);
 		UnusualAdventuresModItems.REGISTRY.register(modEventBus);
+		UnusualAdventuresModEntities.REGISTRY.register(modEventBus);
 		UnusualAdventuresModTabs.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
 		UnusualAdventuresModMenus.REGISTRY.register(modEventBus);

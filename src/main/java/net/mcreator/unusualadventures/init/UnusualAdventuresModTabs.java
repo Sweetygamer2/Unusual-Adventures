@@ -19,22 +19,20 @@ public class UnusualAdventuresModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.unusual_adventures.unusual_adventures")).icon(() -> new ItemStack(UnusualAdventuresModBlocks.BROKEN_COMPUTER.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(UnusualAdventuresModBlocks.COMPUTER.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.BROKEN_COMPUTER.get().asItem());
+				tabData.accept(UnusualAdventuresModItems.BLANK_PROGRAM_DISK.get());
 				tabData.accept(UnusualAdventuresModItems.ANALYSE_MODULE.get());
 				tabData.accept(UnusualAdventuresModItems.REDSTONE_MODULE.get());
+				tabData.accept(UnusualAdventuresModItems.TRANSFER_MODULE.get());
 				tabData.accept(UnusualAdventuresModItems.MUSIC_MODULE.get());
 				tabData.accept(UnusualAdventuresModItems.WALLPAPER_MODULE.get());
 				tabData.accept(UnusualAdventuresModItems.EXPERIMENTAL_MODULE.get());
-				tabData.accept(UnusualAdventuresModBlocks.RUSTY_DRAWER.get().asItem());
-				tabData.accept(UnusualAdventuresModBlocks.OFFICE_LAMP.get().asItem());
 				tabData.accept(UnusualAdventuresModItems.NULL_GAUNTLET.get());
 				tabData.accept(UnusualAdventuresModItems.DASH_MODULE.get());
 				tabData.accept(UnusualAdventuresModItems.HEAL_MODULE.get());
 				tabData.accept(UnusualAdventuresModItems.KB_MODULE.get());
 				tabData.accept(UnusualAdventuresModItems.LASER_MODULE.get());
 				tabData.accept(UnusualAdventuresModBlocks.NULL_WORKBENCH.get().asItem());
-				tabData.accept(UnusualAdventuresModBlocks.CHARGED_NULL_PLATING.get().asItem());
-				tabData.accept(UnusualAdventuresModBlocks.NULL_EMITTER.get().asItem());
-				tabData.accept(UnusualAdventuresModBlocks.POWER.get().asItem());
+				tabData.accept(UnusualAdventuresModBlocks.TRANSFER_PAD.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.NULL_BITS.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.NULL_EXTENSION.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.NULL_BLOCK.get().asItem());
@@ -44,6 +42,9 @@ public class UnusualAdventuresModTabs {
 				tabData.accept(UnusualAdventuresModBlocks.NULL_PLATING.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.CHISELED_NULL_PLATING.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.TILED_NULL_PLATING.get().asItem());
+				tabData.accept(UnusualAdventuresModBlocks.CHARGED_NULL_PLATING.get().asItem());
+				tabData.accept(UnusualAdventuresModBlocks.NULL_EMITTER.get().asItem());
+				tabData.accept(UnusualAdventuresModBlocks.POWER.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.CORRUPTED_LAB_CONCRETE.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.MOSSY_LAB_CONCRETE.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.LAB_CONCRETE.get().asItem());
@@ -55,10 +56,13 @@ public class UnusualAdventuresModTabs {
 				tabData.accept(UnusualAdventuresModBlocks.SMALL_LAB_TILES.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.SMALL_LAB_TILES_STAIRS.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.SMALL_LAB_TILES_SLAB.get().asItem());
+				tabData.accept(UnusualAdventuresModBlocks.RUSTY_DRAWER.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.BROKEN_LIGHT.get().asItem());
+				tabData.accept(UnusualAdventuresModBlocks.OFFICE_LAMP.get().asItem());
 				tabData.accept(UnusualAdventuresModBlocks.LEFTOVER_PAPER.get().asItem());
 				tabData.accept(UnusualAdventuresModItems.MATRIX_VILLAGER_BANNER_PATTERN.get());
 				tabData.accept(UnusualAdventuresModItems.LABORATORY_PLANS.get());
 				tabData.accept(UnusualAdventuresModItems.MUSIC_DISC_BRIGHT_SUNLIGHT.get());
+				tabData.accept(UnusualAdventuresModItems.GOOEY_NULL_SPAWN_EGG.get());
 			}).build());
 }

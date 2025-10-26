@@ -6,6 +6,7 @@ package net.mcreator.unusualadventures.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Rarity;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.unusualadventures.item.WallpaperModuleItem;
+import net.mcreator.unusualadventures.item.TransferModuleItem;
 import net.mcreator.unusualadventures.item.RedstoneModuleItem;
 import net.mcreator.unusualadventures.item.NullGauntletItem;
 import net.mcreator.unusualadventures.item.MusicModuleItem;
@@ -24,6 +26,7 @@ import net.mcreator.unusualadventures.item.KbModuleItem;
 import net.mcreator.unusualadventures.item.HealModuleItem;
 import net.mcreator.unusualadventures.item.ExperimentalModuleItem;
 import net.mcreator.unusualadventures.item.DashModuleItem;
+import net.mcreator.unusualadventures.item.BlankProgramDiskItem;
 import net.mcreator.unusualadventures.item.AnalyseModuleItem;
 import net.mcreator.unusualadventures.UnusualAdventuresMod;
 
@@ -72,6 +75,10 @@ public class UnusualAdventuresModItems {
 	public static final DeferredItem<Item> KB_MODULE = REGISTRY.register("kb_module", KbModuleItem::new);
 	public static final DeferredItem<Item> LASER_MODULE = REGISTRY.register("laser_module", LaserModuleItem::new);
 	public static final DeferredItem<Item> LABORATORY_PLANS = REGISTRY.register("laboratory_plans", LaboratoryPlansItem::new);
+	public static final DeferredItem<Item> GOOEY_NULL_SPAWN_EGG = REGISTRY.register("gooey_null_spawn_egg", () -> new DeferredSpawnEggItem(UnusualAdventuresModEntities.GOOEY_NULL, -16777216, -16738048, new Item.Properties()));
+	public static final DeferredItem<Item> BLANK_PROGRAM_DISK = REGISTRY.register("blank_program_disk", BlankProgramDiskItem::new);
+	public static final DeferredItem<Item> TRANSFER_PAD = block(UnusualAdventuresModBlocks.TRANSFER_PAD, new Item.Properties().rarity(Rarity.UNCOMMON));
+	public static final DeferredItem<Item> TRANSFER_MODULE = REGISTRY.register("transfer_module", TransferModuleItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

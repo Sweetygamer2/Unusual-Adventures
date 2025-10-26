@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "unusual_adventures:charged_null_block"
+    },
+    "b": {
+      "item": "unusual_adventures:null_block"
+    },
+    "c": {
+      "item": "unusual_adventures:null_plating"
+    },
+    "d": {
+      "item": "unusual_adventures:null_emitter"
+    }
+  },
+  "result": {
+    "id": "unusual_adventures:transfer_pad",
+    "count": 1
+  }
+}
