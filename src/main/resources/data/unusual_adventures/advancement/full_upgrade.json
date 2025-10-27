@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "unusual_adventures:music_module"
+      "id": "unusual_adventures:blank_program_disk"
     },
     "title": {
       "translate": "advancements.full_upgrade.title"
@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.full_upgrade.descr"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false

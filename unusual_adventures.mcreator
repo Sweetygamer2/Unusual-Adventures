@@ -2836,6 +2836,45 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "ObtainTransferTools",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtain_transfer_tools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/obtain_transfer_tools.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "NoDestinationPad",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_destination_pad",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/no_destination_pad.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ObtainAllUpgrades",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtain_all_upgrades",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/unusual_adventures/advancement/obtain_all_upgrades.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [],
@@ -3160,7 +3199,13 @@
       "block.unusual_adventures.transfer_pad.description_2": "§8  running the Transfer program",
       "block.unusual_adventures.transfer_pad.description_3": "§8\u003e The Program Disk in the Computer",
       "block.unusual_adventures.transfer_pad.description_4": "§8  has to be linked to another Transfer",
-      "block.unusual_adventures.transfer_pad.description_5": "§8  Pad, used as destination"
+      "block.unusual_adventures.transfer_pad.description_5": "§8  Pad, used as destination",
+      "advancements.obtain_transfer_tools.descr": "Obtain a Transfer Program Disk and a Transfer Pad",
+      "advancements.obtain_transfer_tools.title": "Data Transfer",
+      "advancements.no_destination_pad.title": "Security Concerns",
+      "advancements.no_destination_pad.descr": "Teleport without a Teleportation Pad at destination",
+      "advancements.obtain_all_upgrades.descr": "Obtain all Program Disks",
+      "advancements.obtain_all_upgrades.title": "Program Suite"
     }
   },
   "metadata": {
@@ -3219,7 +3264,7 @@
   "workspaceSettings": {
     "modid": "unusual_adventures",
     "modName": "Unusual Adventures",
-    "version": "1.1.0",
+    "version": "1.1.0b",
     "description": "Program with Computers and explore Digital Landscapes",
     "author": "Sweetygamer",
     "websiteURL": "https://www.curseforge.com/members/sweetygamer/projects",

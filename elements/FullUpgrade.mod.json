@@ -5,7 +5,7 @@
     "achievementName": "Why Did I Install This ?",
     "achievementDescription": "Launch a Computer equipped with 4 modules",
     "achievementIcon": {
-      "value": "CUSTOM:MusicModule"
+      "value": "CUSTOM:BlankProgramDisk"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -15,7 +15,7 @@
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardXP": 60,
-    "achievementType": "challenge",
+    "achievementType": "task",
     "parent": {
       "value": "CUSTOM:UseComputer"
     },

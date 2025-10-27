@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "unusual_adventures:null_gauntlet"
+      "id": "unusual_adventures:transfer_module"
     },
     "title": {
-      "translate": "advancements.obtain_gauntlet.title"
+      "translate": "advancements.obtain_transfer_tools.title"
     },
     "description": {
-      "translate": "advancements.obtain_gauntlet.descr"
+      "translate": "advancements.obtain_transfer_tools.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "obtain_gauntlet_0": {
+    "obtain_transfer_tools_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "unusual_adventures:null_gauntlet"
+              "unusual_adventures:transfer_module"
             ],
             "count": {
               "min": 1,
@@ -31,13 +31,13 @@
         ]
       }
     },
-    "obtain_gauntlet_1": {
+    "obtain_transfer_tools_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "unusual_adventures:null_workbench"
+              "unusual_adventures:transfer_pad"
             ],
             "count": {
               "min": 1,

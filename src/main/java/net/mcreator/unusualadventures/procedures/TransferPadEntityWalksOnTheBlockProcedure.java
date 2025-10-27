@@ -29,6 +29,8 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.unusualadventures.init.UnusualAdventuresModParticleTypes;
 import net.mcreator.unusualadventures.init.UnusualAdventuresModItems;
@@ -118,6 +120,19 @@ public class TransferPadEntityWalksOnTheBlockProcedure {
 												entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FALL)), Mth.nextInt(RandomSource.create(), 3, 6));
 												if (entity instanceof Player _player && !_player.level().isClientSide())
 													_player.displayClientMessage(Component.literal((Component.translatable("item.unusual_adventures.transfer_module.damage").getString())), true);
+												if (!(entity instanceof ServerPlayer _plr61 && _plr61.level() instanceof ServerLevel
+														&& _plr61.getAdvancements().getOrStartProgress(_plr61.server.getAdvancements().get(ResourceLocation.parse("unusual_adventures:no_destination_pad"))).isDone())) {
+													if (entity instanceof ServerPlayer _player) {
+														AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("unusual_adventures:no_destination_pad"));
+														if (_adv != null) {
+															AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+															if (!_ap.isDone()) {
+																for (String criteria : _ap.getRemainingCriteria())
+																	_player.getAdvancements().award(_adv, criteria);
+															}
+														}
+													}
+												}
 											}
 											break;
 										} else {

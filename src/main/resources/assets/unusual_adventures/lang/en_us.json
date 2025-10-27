@@ -141,5 +141,11 @@
   "block.unusual_adventures.transfer_pad.description_2": "§8  running the Transfer program",
   "block.unusual_adventures.transfer_pad.description_3": "§8\u003e The Program Disk in the Computer",
   "block.unusual_adventures.transfer_pad.description_4": "§8  has to be linked to another Transfer",
-  "block.unusual_adventures.transfer_pad.description_5": "§8  Pad, used as destination"
+  "block.unusual_adventures.transfer_pad.description_5": "§8  Pad, used as destination",
+  "advancements.obtain_transfer_tools.descr": "Obtain a Transfer Program Disk and a Transfer Pad",
+  "advancements.obtain_transfer_tools.title": "Data Transfer",
+  "advancements.no_destination_pad.title": "Security Concerns",
+  "advancements.no_destination_pad.descr": "Teleport without a Teleportation Pad at destination",
+  "advancements.obtain_all_upgrades.descr": "Obtain all Program Disks",
+  "advancements.obtain_all_upgrades.title": "Program Suite"
 }
